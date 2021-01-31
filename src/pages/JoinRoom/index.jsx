@@ -1,15 +1,11 @@
 import React, { useState } from "react";
-import { Modal, Button, Form, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import "./style.scss";
 
 const JoinRoom = () => {
-  const [show, setShow] = useState(false);
   const [roomId, setRoomId] = useState("");
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   const handleChange = (e) => {
     setRoomId(e.target.value);
   };
@@ -19,49 +15,87 @@ const JoinRoom = () => {
 
   return (
     <>
-      <Container className="joinRoom">
-        <Row className="joinRoom__buttons ">
-          <Col md={4}>
-            <Button variant="primary" onClick={handleShow}>
+      <div className="container joinRoom">
+        <div className="row joinRoom__buttons ">
+          <div className="col-md-4">
+            <button
+              type="button"
+              className="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
               Join Room
-            </Button>
-          </Col>
-          <Col md={4}>
+            </button>
+          </div>
+          <div className="col-md-4">
             <Link to="/game">
-              <Button variant="secondary">Create Room</Button>
+              <div className="btn btn-secondary">Create Room</div>
             </Link>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
 
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Join Room</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form>
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Room id</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter room id"
-                onChange={handleChange}
-              />
-              <Form.Text className="text-muted">
-                Input room id to join.
-              </Form.Text>
-            </Form.Group>
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleJoin}>
-            Join Room
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      <div
+        className="modal fade"
+        id="exampleModalCenter"
+        tabIndex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLongTitle">
+                Join Room
+              </h5>
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body">
+              <form>
+                <div className="form-group">
+                  <label htmlFor="exampleInputEmail1">Room id</label>
+                  <input
+                    type="input"
+                    className="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter room id"
+                    onChange={handleChange}
+                  />
+                  <small id="emailHelp" className="form-text text-muted">
+                    Input room id to join.
+                  </small>
+                </div>
+              </form>
+            </div>
+            <div className="modal-footer">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                onClick={handleJoin}
+                className="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Join Room
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
