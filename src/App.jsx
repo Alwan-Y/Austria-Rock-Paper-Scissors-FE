@@ -20,13 +20,19 @@ function App() {
         <Route path={ROUTES.LOGIN} exact>
           <Pages.LoginPage />
         </Route>
+        <Route path={ROUTES.JOINROOM} exact>
+          <Pages.JoinRoom />
+        </Route>
+        <Route path={ROUTES.GAME} exact>
+          <Pages.Game />
+        </Route>
         <Route path={ROUTES.PAGENOTFOUND} exact>
           <Pages.PageNotFound />
         </Route>
         <Redirect to={ROUTES.PAGENOTFOUND} />
       </Switch>
     </Router>
-  )
+  );
 }
 
 export default App;
