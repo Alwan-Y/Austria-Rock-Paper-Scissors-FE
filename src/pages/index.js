@@ -1,7 +1,9 @@
 import JoinRoom from "./JoinRoom";
 import Game from "./Game";
 
-export default {
+const Pages = {
   JoinRoom,
   Game,
-};
+}
+
+export default Pages;
