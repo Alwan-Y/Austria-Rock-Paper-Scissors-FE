@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import Modal from "components/Modal";
-import Button from "components/Button";
+import NavigationBar from "components/common/NavigationBar";
+import Footer from "components/common/Footer";
+import Modal from "components/common/Modal";
+import Button from "components/common/Button";
 
 import "./style.scss";
 
@@ -18,6 +20,7 @@ const JoinRoom = () => {
 
   return (
     <>
+      <NavigationBar></NavigationBar>
       <div className="container join-room">
         <div className="row join-room__button ">
           <div className="col-md-4">
@@ -36,6 +39,7 @@ const JoinRoom = () => {
         </div>
       </div>
       <Modal handleChange={handleChange} handleJoin={handleJoin} />
+      <Footer></Footer>
     </>
   );
 };
