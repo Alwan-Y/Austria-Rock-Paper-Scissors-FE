@@ -15,7 +15,7 @@ function App() {
           <Redirect to={ROUTES.HOMEPAGE} />
         </Route>
         <Route path={ROUTES.HOMEPAGE} exact>
-          <Pages.HomePage />
+          <Pages.Home />
         </Route>
         <Route path={ROUTES.LOGIN} exact>
           <Pages.LoginPage />
