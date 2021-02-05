@@ -4,7 +4,7 @@
 
   a {
     text-decoration: none;
-    color: $sail;
+    color: $primary;
     font-size: 14px;
     margin: 0 2vw;
     word-break: keep-all;
@@ -12,19 +12,17 @@
 
   &__logo {
     white-space: nowrap;
-    -webkit-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
 
     &:hover {
-      -webkit-transition: all 0.8s ease 0s;
       transition: all 0.8s ease 0s;
       color: $white !important;
     }
 
     path {
-      fill: $sail;
+      fill: $primary;
       stroke-width: 0.5;
-      stroke: $sail;
+      stroke: $primary;
     }
 
     &--facebook path {
@@ -32,32 +30,19 @@
       stroke-dashoffset: 0;
 
       &:hover {
-        -webkit-animation: facebookIcon 1s linear forwards;
-                animation: facebookIcon 1s linear forwards;
-
-                @-webkit-keyframes facebookIcon {
-                  0% {
-                    stroke-dashoffset: 0;
-                    fill: transparent;
-                  }
-                  100% {
-                    stroke-dashoffset: 60;
-                    stroke: $white;
-                    fill: $white;
-                  }
-                }
-                
-                @keyframes facebookIcon {
-                  0% {
-                    stroke-dashoffset: 0;
-                    fill: transparent;
-                  }
-                  100% {
-                    stroke-dashoffset: 60;
-                    stroke: $white;
-                    fill: $white;
-                  }
-                }
+        animation: facebookIcon 1s linear forwards;
+        
+        @keyframes facebookIcon {
+          0% {
+            stroke-dashoffset: 0;
+            fill: transparent;
+          }
+          100% {
+            stroke-dashoffset: 60;
+            stroke: $white;
+            fill: $white;
+          }
+        }
       }
     }
 
@@ -66,68 +51,42 @@
       stroke-dashoffset: 0;
 
       &:hover {
-        -webkit-animation: twitterIcon 1s linear forwards;
-                animation: twitterIcon 1s linear forwards;
+        animation: twitterIcon 1s linear forwards;
         
-                @-webkit-keyframes twitterIcon {
-                  0% {
-                    stroke-dashoffset: 0;
-                    fill: transparent;
-                  }
-                  100% {
-                    stroke-dashoffset: 74;
-                    stroke: $white;
-                    fill: $white;
-                  }
-                }
-                
-                @keyframes twitterIcon {
-                  0% {
-                    stroke-dashoffset: 0;
-                    fill: transparent;
-                  }
-                  100% {
-                    stroke-dashoffset: 74;
-                    stroke: $white;
-                    fill: $white;
-                  }
-                }
+        @keyframes twitterIcon {
+          0% {
+            stroke-dashoffset: 0;
+            fill: transparent;
+          }
+          100% {
+            stroke-dashoffset: 74;
+            stroke: $white;
+            fill: $white;
+          }
+        }
       }
     }
 
     &--youtube path {
-      fill: #FF1313;
-      stroke: #FF1313;
+      fill: $primary;
+      stroke: $primary;
       stroke-dasharray: 77;
       stroke-dashoffset: 0;
 
       &:hover {
-        -webkit-animation: youtubeIcon 1s linear forwards;
-                animation: youtubeIcon 1s linear forwards;
-
-                @-webkit-keyframes youtubeIcon {
-                  0% {
-                    stroke-dashoffset: 0;
-                    fill: transparent;
-                  }
-                  100% {
-                    stroke-dashoffset: 77;
-                    stroke: $white;
-                    fill: $white;
-                  }
-                }
-                
-                @keyframes youtubeIcon {
-                  0% {
-                    stroke-dashoffset: 0;
-                    fill: transparent;
-                  }
-                  100% {
-                    stroke-dashoffset: 77;
-                    stroke: $white;
-                    fill: $white;
-                  }
-                }
+        animation: youtubeIcon 1s linear forwards;
+        
+        @keyframes youtubeIcon {
+          0% {
+            stroke-dashoffset: 0;
+            fill: transparent;
+          }
+          100% {
+            stroke-dashoffset: 77;
+            stroke: $white;
+            fill: $white;
+          }
+        }
       }
     }
 
@@ -136,50 +95,42 @@
       stroke-dashoffset: 0;
 
       &:hover {
-        -webkit-animation: twitchIcon 1s linear forwards;
-                animation: twitchIcon 1s linear forwards;
-
-                @-webkit-keyframes twitchIcon {
-                  0% {
-                    stroke-dashoffset: 0;
-                    fill: transparent;
-                  }
-                  100% {
-                    stroke-dashoffset: 70;
-                    stroke: $white;
-                    fill: $white;
-                  }
-                }
-                
-                @keyframes twitchIcon {
-                  0% {
-                    stroke-dashoffset: 0;
-                    fill: transparent;
-                  }
-                  100% {
-                    stroke-dashoffset: 70;
-                    stroke: $white;
-                    fill: $white;
-                  }
-                }
+        animation: twitchIcon 1s linear forwards;
+        
+        @keyframes twitchIcon {
+          0% {
+            stroke-dashoffset: 0;
+            fill: transparent;
+          }
+          100% {
+            stroke-dashoffset: 70;
+            stroke: $white;
+            fill: $white;
+          }
+        }
       }
     }
   }
 
   hr {
-    border-top: 1px solid grey;
+    border-top: 1px solid $white;
   }
 }
 
 .footer {
   &__copyright {
     font-size: 14px;
-    color: grey;
+    color: $white;
   }
 
   &__link {
     text-decoration: none;
-    color: $black;
+    transition: all 0.8s ease 0s;
+
+    &:hover {
+      transition: all 0.8s ease 0s;
+      color: $white;
+    }
   }
 }
 
