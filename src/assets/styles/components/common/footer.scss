@@ -4,7 +4,7 @@
 
   a {
     text-decoration: none;
-    color: $amber;
+    color: $sail;
     font-size: 14px;
     margin: 0 2vw;
     word-break: keep-all;
@@ -22,9 +22,9 @@
     }
 
     path {
-      fill: $amber;
+      fill: $sail;
       stroke-width: 0.5;
-      stroke: $amber;
+      stroke: $sail;
     }
 
     &--facebook path {

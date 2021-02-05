@@ -17,18 +17,18 @@ function App() {
         <Route path={ROUTES.HOMEPAGE} exact>
           <Pages.Home />
         </Route>
-        <Route path={ROUTES.LOGIN} exact>
+        {/* <Route path={ROUTES.LOGIN} exact>
           <Pages.LoginPage />
-        </Route>
+        </Route> */}
         <Route path={ROUTES.JOINROOM} exact>
           <Pages.JoinRoom />
         </Route>
         <Route path={ROUTES.GAME} exact>
           <Pages.Game />
         </Route>
-        <Route path={ROUTES.PAGENOTFOUND} exact>
+        {/* <Route path={ROUTES.PAGENOTFOUND} exact>
           <Pages.PageNotFound />
-        </Route>
+        </Route> */}
         <Redirect to={ROUTES.PAGENOTFOUND} />
       </Switch>
     </Router>

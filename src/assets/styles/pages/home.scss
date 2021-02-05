@@ -1,0 +1,26 @@
+.jumbotron-home {
+  &--background {
+    background-image: linear-gradient(to bottom, $black 0%, transparent 20%, transparent 70%, $black 100%), url(../../images/index/main-bg.jpg);
+  }
+  
+  &__title {
+    color: $white;
+    margin-top: 25vh;
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+
+  &__caption {
+    color: $white;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  &__button {
+    margin-top: 4vh;
+    padding: 10px 50px 10px 50px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+  }
+}

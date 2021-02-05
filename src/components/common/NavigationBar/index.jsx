@@ -1,6 +1,6 @@
 const NavigationBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light w-100">
+    <nav className="navbar navbar-expand-lg w-100 position-absolute">
       <div className="container mr-auto">
         <a className="navbar-brand mr-5" href="/">Logo</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"

@@ -6,8 +6,6 @@ import Footer from "components/common/Footer";
 import Modal from "components/common/Modal";
 import Button from "components/common/Button";
 
-import "./style.scss";
-
 const JoinRoom = () => {
   const [roomId, setRoomId] = useState("");
 
