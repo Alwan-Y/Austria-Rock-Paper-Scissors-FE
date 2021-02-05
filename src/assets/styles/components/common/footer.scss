@@ -1,10 +1,10 @@
 .social-media-bar {
-  background-color: black;
+  background-color: $black;
   height: 30vh;
 
   a {
     text-decoration: none;
-    color: gold;
+    color: $amber;
     font-size: 14px;
     margin: 0 2vw;
     word-break: keep-all;
@@ -18,13 +18,13 @@
     &:hover {
       -webkit-transition: all 0.8s ease 0s;
       transition: all 0.8s ease 0s;
-      color: white !important;
+      color: $white !important;
     }
 
     path {
-      fill: gold;
+      fill: $amber;
       stroke-width: 0.5;
-      stroke: gold;
+      stroke: $amber;
     }
 
     &--facebook path {
@@ -42,8 +42,8 @@
                   }
                   100% {
                     stroke-dashoffset: 60;
-                    stroke: white;
-                    fill: white;
+                    stroke: $white;
+                    fill: $white;
                   }
                 }
                 
@@ -54,8 +54,8 @@
                   }
                   100% {
                     stroke-dashoffset: 60;
-                    stroke: white;
-                    fill: white;
+                    stroke: $white;
+                    fill: $white;
                   }
                 }
       }
@@ -76,8 +76,8 @@
                   }
                   100% {
                     stroke-dashoffset: 74;
-                    stroke: white;
-                    fill: white;
+                    stroke: $white;
+                    fill: $white;
                   }
                 }
                 
@@ -88,8 +88,8 @@
                   }
                   100% {
                     stroke-dashoffset: 74;
-                    stroke: white;
-                    fill: white;
+                    stroke: $white;
+                    fill: $white;
                   }
                 }
       }
@@ -112,8 +112,8 @@
                   }
                   100% {
                     stroke-dashoffset: 77;
-                    stroke: white;
-                    fill: white;
+                    stroke: $white;
+                    fill: $white;
                   }
                 }
                 
@@ -124,8 +124,8 @@
                   }
                   100% {
                     stroke-dashoffset: 77;
-                    stroke: white;
-                    fill: white;
+                    stroke: $white;
+                    fill: $white;
                   }
                 }
       }
@@ -146,8 +146,8 @@
                   }
                   100% {
                     stroke-dashoffset: 70;
-                    stroke: white;
-                    fill: white;
+                    stroke: $white;
+                    fill: $white;
                   }
                 }
                 
@@ -158,8 +158,8 @@
                   }
                   100% {
                     stroke-dashoffset: 70;
-                    stroke: white;
-                    fill: white;
+                    stroke: $white;
+                    fill: $white;
                   }
                 }
       }
@@ -179,7 +179,7 @@
 
   &__link {
     text-decoration: none;
-    color: black;
+    color: $black;
   }
 }
 

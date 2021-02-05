@@ -4,7 +4,7 @@
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
-  background-color: white;
+  background-color: $white;
   z-index: 99;
 
   &-toggler {
@@ -15,7 +15,7 @@
   .nav {
     &-link {
       margin: 0px 1vw 0px 1vw;
-      color: gold !important;
+      color: $amber !important;
       text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
       -webkit-transition: all 0.8s ease 0s;
       transition: all 0.8s ease 0s;
@@ -23,11 +23,11 @@
       &:hover {
         -webkit-transition: all 0.8s ease 0s;
         transition: all 0.8s ease 0s;
-        color: white !important;
+        color: $white !important;
       }
 
       &--text-black {
-        color: black !important;
+        color: $black !important;
       }
     }
   }
@@ -38,7 +38,7 @@
     background-color: rgba(0, 0, 0, 0.3) !important;
 
     &-brand {
-      color: gold !important;
+      color: $amber !important;
     }
 
     .nav{

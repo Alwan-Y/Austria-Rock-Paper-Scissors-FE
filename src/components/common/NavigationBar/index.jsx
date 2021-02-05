@@ -1,5 +1,3 @@
-import "./index.scss";
-
 const NavigationBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light w-100">
