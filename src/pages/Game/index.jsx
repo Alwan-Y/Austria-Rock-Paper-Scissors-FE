@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-import Choice from "components/Choice";
+import Choice from "components/common/Choice";
 
 const Game = () => {
   const { id } = useParams();

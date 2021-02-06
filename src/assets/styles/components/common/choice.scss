@@ -6,17 +6,17 @@
   }
 
   &__rock {
-    background-image: url("../../batu.png");
+    background-image: url("../../../images/index/batu.png");
     background-repeat: no-repeat !important;
   }
 
   &__paper {
-    background-image: url("../../kertas.png") !important;
+    background-image: url("../../../images/index/kertas.png") !important;
     background-repeat: no-repeat;
   }
 
   &__scissor {
-    background-image: url("../../gunting.png") !important;
+    background-image: url("../../../images/index/gunting.png") !important;
     background-repeat: no-repeat;
   }
 }
