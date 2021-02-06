@@ -4,6 +4,7 @@ const ROUTES = {
   REGISTER: "/auth/register",
   LOGIN: "/auth/login",
   JOINROOM: "/joinroom",
+  REGISTERBIO: "/register-bio",
   GAME: "/game",
   PAGENOTFOUND: "/page-not-found",
 };
