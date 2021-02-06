@@ -41,11 +41,11 @@
         margin: 0px 15px -15px;
         background-color: $transparent;
         border-radius: 50%;
-        box-shadow: inset 0px 0px 0px 1px $white;
+        box-shadow: inset 0px 0px 0px 1px $secondary;
       }
 
       .active {
-        background-color: $white !important;
+        background-color: $secondary !important;
       }
     }
 
