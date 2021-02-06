@@ -29,6 +29,9 @@ function App() {
         <Route path={ROUTES.REGISTERBIO} exact>
           <Pages.RegisterBio />
         </Route>
+        <Route path={ROUTES.GAME}>
+          <Pages.Game />
+        </Route>
         {/* <Route path={ROUTES.PAGENOTFOUND} exact>
           <Pages.PageNotFound />
         </Route> */}

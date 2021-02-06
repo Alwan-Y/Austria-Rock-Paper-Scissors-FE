@@ -5,8 +5,8 @@ const ROUTES = {
   LOGIN: "/auth/login",
   JOINROOM: "/joinroom",
   REGISTERBIO: "/register-bio",
-  GAME: "/game",
-  PAGENOTFOUND: "/page-not-found",
+  GAME: "/game/:id",
+  PAGENOTFOUND: "/404",
 };
 
 export default ROUTES;

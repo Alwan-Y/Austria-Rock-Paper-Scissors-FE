@@ -4,6 +4,7 @@ import Game from "./Game";
 import Register from "./Register";
 import Login from "./Login";
 import RegisterBio from "./Register-bio";
+import PageNotFound from "./PageNotFound";
 
 const Pages = {
   Home,
@@ -12,6 +13,7 @@ const Pages = {
   Register,
   Login,
   RegisterBio,
+  PageNotFound,
 };
 
 export default Pages;
