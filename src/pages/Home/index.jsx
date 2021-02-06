@@ -12,11 +12,7 @@ const Home = () => (
         <div className="container text-uppercase font-weight-bold">
           <div className="home__title">Play traditional game</div>
           <div className="home__caption">Experience new traditional game play</div>
-<<<<<<< HEAD
           <Link to="/joinroom">
-=======
-          <Link to="/game">
->>>>>>> 12d5063a05689a443fc09f30d8761591c77721b0
             <Button type="primary" label="PLAY NOW" className="home__button" />
           </Link>
         </div>
