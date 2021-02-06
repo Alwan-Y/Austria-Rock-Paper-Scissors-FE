@@ -9,21 +9,50 @@ const Home = () => (
   <div>
     <NavigationBar />
     <div>
-      <div className="jumbotron jumbotron-fluid jumbotron-home jumbotron-home--background">
+      <div className="jumbotron jumbotron-fluid home home--background">
         <div className="container text-uppercase font-weight-bold">
-          <div className="jumbotron-home__title">Play traditional game</div>
-          <div className="jumbotron-home__caption">Experience new traditional game play</div>
+          <div className="home__title">Play traditional game</div>
+          <div className="home__caption">Experience new traditional game play</div>
           <Link to="/game">
-            <Button type="primary" label="PLAY NOW" className="jumbotron-home__button" />
+            <Button type="primary" label="PLAY NOW" className="home__button" />
           </Link>
         </div>
       </div>
     </div>
 
-    <div className="jumbotron jumbotron-fluid carousel-game carousel-game--background">
+    <div className="jumbotron jumbotron-fluid home-leaderboard home-leaderboard--background">
       <div className="container h-100 d-flex align-items-center">
         <div className="row mx-auto">
           <div className="col-lg-6">
+            <div className="home-leaderboard__title">Leaderboard</div>
+            {/* Leaderboard Table */}
+            <table className="table table-dark home-leaderboard__table">
+              <thead>
+                <tr>
+                  <th scope="col">Rank#</th>
+                  <th scope="col">User ID</th>
+                  <th scope="col">Total Win Rounds</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                </tr>
+              </tbody>
+            </table>
+            {/* End of Leaderboard Table */}
           </div>
 
           {/* Carousel */}
@@ -70,6 +99,30 @@ const Home = () => (
         </div>
       </div>
     </div>
+
+    <div className="jumbotron jumbotron-fluid home-sysreq home-sysreq--background">
+      <div className="container">
+        <div className="row mt-5 text-uppercase text-left">
+          <div className="col-5">
+            <div className="font-weight-bold home-sysreq__title">System Requirement</div>
+          </div>
+        </div>
+        <div className="row mt-5 text-right">
+          <div className="col-6 offset-6 position-relative">
+            <div className="position-absolute home-sysreq__specification">
+              <div>Requires a 64-bit processor and operating system</div>
+              <div>Windows 7 or 10 : OS</div>
+              <div>Intel Core i5 or AMD equivalent : Processor</div>
+              <div>4 GB RAM : Memory</div>
+              <div>NVIDIA GTX 660 or AMD Radeon HD 7950 : Graphics</div>
+              <div>Broadband Internet connection : Network</div>
+              <div>2 GB available space : Storage</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <Footer />
   </div>
 );
