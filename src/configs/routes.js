@@ -5,7 +5,7 @@ const ROUTES = {
   LOGIN: "/auth/login",
   JOINROOM: "/joinroom",
   GAME: "/game/:id",
-  PAGENOTFOUND: "/page-not-found",
+  PAGENOTFOUND: "/404",
 };
 
 export default ROUTES;
