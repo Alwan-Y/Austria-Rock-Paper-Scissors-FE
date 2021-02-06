@@ -25,21 +25,21 @@
       stroke: $primary;
     }
 
-    @include svg-animation("facebook", $white, 60, 0);
-    @include svg-animation("twitter", $white, 74, 0);
-    @include svg-animation("youtube", $white, 77, 0);
-    @include svg-animation("twitch", $white, 70, 0);
+    @include svg-animation("facebook", $secondary, 60, 0);
+    @include svg-animation("twitter", $secondary, 74, 0);
+    @include svg-animation("youtube", $secondary, 77, 0);
+    @include svg-animation("twitch", $secondary, 70, 0);
   }
 
   hr {
-    border-top: 1px solid $white;
+    border-top: 1px solid $secondary;
   }
 }
 
 .footer {
   &__copyright {
     font-size: 14px;
-    color: $white;
+    color: $secondary;
   }
 
   &__link {
@@ -48,7 +48,7 @@
 
     &:hover {
       transition: all 0.8s ease 0s;
-      color: $white;
+      color: $secondary;
     }
   }
 }
