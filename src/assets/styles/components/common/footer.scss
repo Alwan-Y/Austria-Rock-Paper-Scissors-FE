@@ -25,91 +25,10 @@
       stroke: $primary;
     }
 
-    &--facebook path {
-      stroke-dasharray: 60;
-      stroke-dashoffset: 0;
-
-      &:hover {
-        animation: facebookIcon 1s linear forwards;
-        
-        @keyframes facebookIcon {
-          0% {
-            stroke-dashoffset: 0;
-            fill: transparent;
-          }
-          100% {
-            stroke-dashoffset: 60;
-            stroke: $white;
-            fill: $white;
-          }
-        }
-      }
-    }
-
-    &--twitter path {
-      stroke-dasharray: 74;
-      stroke-dashoffset: 0;
-
-      &:hover {
-        animation: twitterIcon 1s linear forwards;
-        
-        @keyframes twitterIcon {
-          0% {
-            stroke-dashoffset: 0;
-            fill: transparent;
-          }
-          100% {
-            stroke-dashoffset: 74;
-            stroke: $white;
-            fill: $white;
-          }
-        }
-      }
-    }
-
-    &--youtube path {
-      fill: $primary;
-      stroke: $primary;
-      stroke-dasharray: 77;
-      stroke-dashoffset: 0;
-
-      &:hover {
-        animation: youtubeIcon 1s linear forwards;
-        
-        @keyframes youtubeIcon {
-          0% {
-            stroke-dashoffset: 0;
-            fill: transparent;
-          }
-          100% {
-            stroke-dashoffset: 77;
-            stroke: $white;
-            fill: $white;
-          }
-        }
-      }
-    }
-
-    &--twitch path {
-      stroke-dasharray: 70;
-      stroke-dashoffset: 0;
-
-      &:hover {
-        animation: twitchIcon 1s linear forwards;
-        
-        @keyframes twitchIcon {
-          0% {
-            stroke-dashoffset: 0;
-            fill: transparent;
-          }
-          100% {
-            stroke-dashoffset: 70;
-            stroke: $white;
-            fill: $white;
-          }
-        }
-      }
-    }
+    @include svg-animation("facebook", $white, 60, 0);
+    @include svg-animation("twitter", $white, 74, 0);
+    @include svg-animation("youtube", $white, 77, 0);
+    @include svg-animation("twitch", $white, 70, 0);
   }
 
   hr {
