@@ -4,7 +4,7 @@ const ROUTES = {
   SIGNUP: "/auth/signup",
   LOGIN: "/auth/login",
   JOINROOM: "/joinroom",
-  GAME: "/game",
+  GAME: "/game/:id",
   PAGENOTFOUND: "/page-not-found",
 };
 

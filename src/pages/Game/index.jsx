@@ -1,5 +1,9 @@
+import { useParams } from "react-router-dom";
+
 const Game = () => {
-  return <h1>Game Page</h1>;
+  const { id } = useParams();
+
+  return <h1>Game id : {id}</h1>;
 };
 
 export default Game;
