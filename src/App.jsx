@@ -17,6 +17,9 @@ function App() {
         <Route path={ROUTES.HOMEPAGE} exact>
           <Pages.Home />
         </Route>
+        <Route path={ROUTES.REGISTER} exact>
+          <Pages.Register />
+        </Route>
         {/* <Route path={ROUTES.LOGIN} exact>
           <Pages.LoginPage />
         </Route> */}
