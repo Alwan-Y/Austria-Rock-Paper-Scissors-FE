@@ -1,32 +1,50 @@
-.jumbotron-home {
+.home {
   &--background {
-    background-image: linear-gradient(to bottom, $black 0%, transparent 20%, transparent 70%, $black 100%), url(../../images/index/main-bg.jpg);
+    @include background("../images/index/index1.jpg", bottom, $black, 0%, $transparent, 20%, $transparent, 70%, $black, 100%);
   }
   
   &__title {
-    color: $white;
+    @include title(8vh, 1.25vw);
     margin-top: 25vh;
-    font-size: 32px;
-    letter-spacing: 2px;
   }
 
   &__caption {
-    color: $white;
-    font-size: 16px;
-    letter-spacing: 2px;
+    @include title(3vh, 0.25vw);
   }
 
   &__button {
+    @include title(2.5vh, 0.2vw, $black);
     margin-top: 4vh;
     padding: 10px 50px 10px 50px;
-    font-size: 16px;
-    letter-spacing: 2px;
     border-radius: 5px;
+  }
+
+  &-leaderboard {
+    &--background {
+      @include background("../images/index/index4.jpg", bottom);
+    }
+
+    &__title {
+      @include title(8vh, 1.5vw);
+    }
+  }
+
+  &-sysreq {
+    color: $white;
+
+    &--background {
+      @include background("../images/index/index2.jpg", bottom);
+    }
+
+    &__title {
+      @include title(8vh, 1.5vw);
+    }
+
+    &__specification {
+      top: 10vh;
+      right: 0;
+      font-size: 3vh;
+    }
   }
 }
 
-.carousel-game{
-  &--background {
-    background-image: linear-gradient(black 0%, transparent 10%, transparent 90%, black 100%), url(../../images/index/the-games-bg.jpg);
-  }
-}
