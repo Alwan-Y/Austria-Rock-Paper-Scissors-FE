@@ -20,9 +20,9 @@ function App() {
         <Route path={ROUTES.REGISTER} exact>
           <Pages.Register />
         </Route>
-        {/* <Route path={ROUTES.LOGIN} exact>
-          <Pages.LoginPage />
-        </Route> */}
+        <Route path={ROUTES.LOGIN} exact>
+          <Pages.Login />
+        </Route>
         <Route path={ROUTES.JOINROOM} exact>
           <Pages.JoinRoom />
         </Route>
