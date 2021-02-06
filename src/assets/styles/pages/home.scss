@@ -68,11 +68,7 @@
 
   &-sysreq {
     color: $secondary;
-<<<<<<< HEAD
     @include background("../images/index/index3.jpg", bottom);
-=======
-    @include background("../images/index/index2.jpg", bottom);
->>>>>>> 12d5063a05689a443fc09f30d8761591c77721b0
 
     &__title {
       @include caption();
