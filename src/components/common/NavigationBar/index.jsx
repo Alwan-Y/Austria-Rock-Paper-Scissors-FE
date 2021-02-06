@@ -12,24 +12,18 @@ const NavigationBar = () => {
         <div className="collapse navbar-collapse" id="navbarText">
           <ul className="navbar-nav mr-auto navbar-center">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home<span className="sr-only">(current)</span></Link>
+              <Link to="/" className="nav-link">Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="#featurescontent">Work</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="#newslettercontent">Contact</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="#navigation">About Me</Link>
+              <Link to="/feedback" className="nav-link">Feedback</Link>
             </li>
           </ul>
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/auth/signup">Sign Up</Link>
+              <Link to="/auth/signup" className="nav-link">Sign Up</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/auth/login">Login</Link>
+              <Link to="/auth/login" className="nav-link">Login</Link>
             </li>
           </ul>
 

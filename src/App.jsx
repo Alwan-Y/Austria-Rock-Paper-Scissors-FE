@@ -17,6 +17,9 @@ function App() {
         <Route path={ROUTES.HOMEPAGE} exact>
           <Pages.Home />
         </Route>
+        <Route path={ROUTES.FEEDBACK} exact>
+          <Pages.Feedback />
+        </Route>
         {/* <Route path={ROUTES.LOGIN} exact>
           <Pages.LoginPage />
         </Route> */}
