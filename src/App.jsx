@@ -29,9 +29,9 @@ function App() {
         <Route path={ROUTES.REGISTERBIO} exact>
           <Pages.RegisterBio />
         </Route>
-        {/* <Route path={ROUTES.PAGENOTFOUND} exact>
+        <Route path={ROUTES.PAGENOTFOUND}>
           <Pages.PageNotFound />
-        </Route> */}
+        </Route>
         <Redirect to={ROUTES.PAGENOTFOUND} />
       </Switch>
     </Router>

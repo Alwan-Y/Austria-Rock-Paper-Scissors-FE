@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import NavigationBar from "components/common/NavigationBar";
 import Footer from "components/common/Footer";
@@ -13,7 +12,7 @@ const Home = () => (
         <div className="container text-uppercase font-weight-bold">
           <div className="home__title">Play traditional game</div>
           <div className="home__caption">Experience new traditional game play</div>
-          <Link to="/game">
+          <Link to="/joinroom">
             <Button type="primary" label="PLAY NOW" className="home__button" />
           </Link>
         </div>

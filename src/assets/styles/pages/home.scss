@@ -18,7 +18,7 @@
   }
 
   &-leaderboard {
-    @include background("../images/index/index4.jpg", bottom);
+    @include background("../images/index/index2.jpg", bottom);
 
     &__title {
       @include caption();
@@ -68,7 +68,7 @@
 
   &-sysreq {
     color: $secondary;
-    @include background("../images/index/index2.jpg", bottom);
+    @include background("../images/index/index3.jpg", bottom);
 
     &__title {
       @include caption();

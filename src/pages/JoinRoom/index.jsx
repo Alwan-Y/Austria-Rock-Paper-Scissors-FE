@@ -42,26 +42,28 @@ const JoinRoom = () => {
   return (
     <>
       <NavigationBar></NavigationBar>
-      <div className="container join-room">
-        <div className="row join-room__button ">
-          <div className="col-md-4">
-            <Button
-              label="Join Room"
-              dataToggle="modal"
-              dataTarget="#exampleModalCenter"
-              type="primary"
-            />
-          </div>
-          <div className="col-md-4">
-            <Button
-              type="secondary"
-              onClick={handleCreateRoom}
-              label="Create Room"
-            />
+      <div className="jumbotron jumbotron-fluid join-room join-room--background">
+        <div className="container">
+          <div className="row join-room__button ">
+            <div className="col-md-4">
+              <Button
+                label="Join Room"
+                dataToggle="modal"
+                dataTarget="#exampleModalCenter"
+                type="primary"
+              />
+            </div>
+            <div className="col-md-4">
+              <Button
+                type="secondary"
+                onClick={handleCreateRoom}
+                label="Create Room"
+              />
+            </div>
           </div>
         </div>
+        <Modal handleChange={handleChange} handleJoin={handleJoin} />
       </div>
-      <Modal handleChange={handleChange} handleJoin={handleJoin} />
       <Footer></Footer>
     </>
   );
