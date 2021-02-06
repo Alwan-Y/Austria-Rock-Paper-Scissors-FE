@@ -1,43 +1,77 @@
 .home {
-  &--background {
-    @include background("../images/index/index1.jpg", bottom, $black, 0%, $transparent, 20%, $transparent, 70%, $black, 100%);
-  }
+  @include background("../images/index/index1.jpg", bottom, $black, 0%, $transparent, 20%, $transparent, 70%, $black, 100%);
   
   &__title {
-    @include title(8vh, 1.25vw);
+    @include caption(8vh, 1.25vw);
     margin-top: 25vh;
   }
 
   &__caption {
-    @include title(3vh, 0.25vw);
+    @include caption(3vh, 0.25vw);
   }
 
   &__button {
-    @include title(2.5vh, 0.2vw, $black);
+    @include caption(2.5vh, 0.2vw, $black);
     margin-top: 4vh;
     padding: 10px 50px 10px 50px;
     border-radius: 5px;
   }
 
   &-leaderboard {
-    &--background {
-      @include background("../images/index/index4.jpg", bottom);
-    }
+    @include background("../images/index/index4.jpg", bottom);
 
     &__title {
-      @include title(8vh, 1.5vw);
+      @include caption();
+    }
+
+    &__table {
+      color: $secondary;
+    }
+  }
+
+  &-carousel {
+    img {
+      margin: auto;
+    }
+
+    &__indicators{
+      li {
+        width: 10px;
+        height: 10px;
+        margin: 0px 15px -15px;
+        background-color: $transparent;
+        border-radius: 50%;
+        box-shadow: inset 0px 0px 0px 1px $white;
+      }
+
+      .active {
+        background-color: $white !important;
+      }
+    }
+
+    .carousel-control-prev {
+      opacity: 1;
+
+      &-icon {
+        background-image: url('data:image/svg+xml, <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left" fill="white" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/> </svg>');
+      }
+    }
+
+    .carousel-control-next {
+      opacity: 1;
+
+      &-icon {
+        background-image: url('data:image/svg+xml, <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right" fill="white" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/> </svg>');
+      }
     }
   }
 
   &-sysreq {
-    color: $white;
-
-    &--background {
-      @include background("../images/index/index2.jpg", bottom);
-    }
+    color: $secondary;
+    @include background("../images/index/index2.jpg", bottom);
 
     &__title {
-      @include title(8vh, 1.5vw);
+      @include caption();
     }
 
     &__specification {

@@ -21,81 +21,88 @@ const Home = () => (
     </div>
 
     <div className="jumbotron jumbotron-fluid home-leaderboard home-leaderboard--background">
-      <div className="container h-100 d-flex align-items-center">
-        <div className="row mx-auto">
+      <div className="container h-100">
+        <div className="row mx-auto mt-5">
           <div className="col-lg-6">
             <div className="home-leaderboard__title">Leaderboard</div>
-            {/* Leaderboard Table */}
-            <table className="table table-dark home-leaderboard__table">
-              <thead>
-                <tr>
-                  <th scope="col">Rank#</th>
-                  <th scope="col">User ID</th>
-                  <th scope="col">Total Win Rounds</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                </tr>
-              </tbody>
-            </table>
-            {/* End of Leaderboard Table */}
           </div>
+        </div>
+        <div className="d-flex align-items-center">
+          <div className="row mx-auto">
+            <div className="col-lg-6">
 
-          {/* Carousel */}
-          <div className="col-lg-6">
-            <div id="carousel-game-option" className="carousel slide" data-interval="false">
-              <ul className="carousel-indicators">
-                <li data-target="#carousel-game-option" data-slide-to="0" className="active"></li>
-                <li data-target="#carousel-game-option" data-slide-to="1"></li>
-                <li data-target="#carousel-game-option" data-slide-to="2"></li>
-                <li data-target="#carousel-game-option" data-slide-to="3"></li>
-                <li data-target="#carousel-game-option" data-slide-to="4"></li>
-              </ul>
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <Link to="/game">
-                    <img className="d-block w-75" src={img} alt="First slide" />
-                  </Link>
-                </div>
-                <div className="carousel-item">
-                  <img className="d-block w-75" src={img} alt="Second slide" />
-                </div>
-                <div className="carousel-item">
-                  <img className="d-block w-75" src={img} alt="Third slide" />
-                </div>
-                <div className="carousel-item">
-                  <img className="d-block w-75" src={img} alt="Fourth slide" />
-                </div>
-                <div className="carousel-item">
-                  <img className="d-block w-75" src={img} alt="Fifth slide" />
-                </div>
-              </div>
-              <a className="carousel-control-prev" href="#carousel-game-option" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-              </a>
-              <a className="carousel-control-next" href="#carousel-game-option" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-              </a>
+              {/* Leaderboard Table */}
+              <table className="table home-leaderboard__table">
+                <thead>
+                  <tr>
+                    <th scope="col">Rank#</th>
+                    <th scope="col">User ID</th>
+                    <th scope="col">Total Win Rounds</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>dummyuser1</td>
+                    <td>432</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>dummyuser2</td>
+                    <td>321</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>dummyuser3</td>
+                    <td>123</td>
+                  </tr>
+                </tbody>
+              </table>
+              {/* End of Leaderboard Table */}
             </div>
-          </div>
-          {/* End of Carousel */}
 
+            {/* Carousel */}
+            <div className="col-lg-6">
+              <div id="carousel-game-option" className="carousel slide home-carousel" data-interval="false">
+                <ul className="carousel-indicators home-carousel__indicators">
+                  <li data-target="#carousel-game-option" data-slide-to="0" className="active"></li>
+                  <li data-target="#carousel-game-option" data-slide-to="1"></li>
+                  <li data-target="#carousel-game-option" data-slide-to="2"></li>
+                  <li data-target="#carousel-game-option" data-slide-to="3"></li>
+                  <li data-target="#carousel-game-option" data-slide-to="4"></li>
+                </ul>
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <Link to="/game">
+                      <img className="d-block w-75" src={img} alt="First slide" />
+                    </Link>
+                  </div>
+                  <div className="carousel-item">
+                    <img className="d-block w-75" src={img} alt="Second slide" />
+                  </div>
+                  <div className="carousel-item">
+                    <img className="d-block w-75" src={img} alt="Third slide" />
+                  </div>
+                  <div className="carousel-item">
+                    <img className="d-block w-75" src={img} alt="Fourth slide" />
+                  </div>
+                  <div className="carousel-item">
+                    <img className="d-block w-75" src={img} alt="Fifth slide" />
+                  </div>
+                </div>
+                <a className="carousel-control-prev" href="#carousel-game-option" role="button" data-slide="prev">
+                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span className="sr-only">Previous</span>
+                </a>
+                <a className="carousel-control-next" href="#carousel-game-option" role="button" data-slide="next">
+                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span className="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            {/* End of Carousel */}
+
+          </div>
         </div>
       </div>
     </div>
