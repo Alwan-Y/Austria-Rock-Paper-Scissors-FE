@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <>
@@ -42,9 +44,9 @@ const Footer = () => {
             </div>
             <div className="col-lg-6 offset-lg-2 mb-2 text-center">
               <div className="d-inline">
-                <a href="/" className="m-0 footer__link"><span>Privacy Policy </span></a>|
-                <a href="/" className="m-0 footer__link"><span>Terms of Services </span></a>|
-                <a href="/" className="m-0 footer__link"><span>Code of Conduct</span></a>
+                <Link to="/privacy-policy" className="m-0 footer__link"><span>Privacy Policy </span></Link>|
+                <Link to="/terms-of-services" className="m-0 footer__link"><span>Terms of Services </span></Link>|
+                <Link to="/code-of-conduct" className="m-0 footer__link"><span>Code of Conduct</span></Link>
               </div>
             </div>
           </div>
