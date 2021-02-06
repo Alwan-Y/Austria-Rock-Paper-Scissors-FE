@@ -23,7 +23,7 @@ function App() {
         <Route path={ROUTES.JOINROOM} exact>
           <Pages.JoinRoom />
         </Route>
-        <Route path={ROUTES.GAME} exact>
+        <Route path={ROUTES.GAME}>
           <Pages.Game />
         </Route>
         {/* <Route path={ROUTES.PAGENOTFOUND} exact>
