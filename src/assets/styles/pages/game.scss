@@ -1,0 +1,14 @@
+.room {
+  background-color: #fffef9;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #2e2e2e;
+  margin: 5rem auto;
+  height: 30rem;
+  box-shadow: 5px 2px 33px -14px #2e2e2e;
+
+  &__choice {
+    margin-top: 6rem;
+    margin-left: 18rem;
+  }
+}

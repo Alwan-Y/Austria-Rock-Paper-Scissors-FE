@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+
+import api from "services";
 
 import NavigationBar from "components/common/NavigationBar";
 import Footer from "components/common/Footer";
@@ -8,12 +10,33 @@ import Button from "components/common/Button";
 
 const JoinRoom = () => {
   const [roomId, setRoomId] = useState("");
+  const history = useHistory();
 
   const handleChange = (e) => {
     setRoomId(e.target.value);
   };
-  const handleJoin = () => {
-    console.log(`joining room ${roomId}`);
+  const handleJoin = async () => {
+    try {
+      const res = await api.joinRoom(roomId, "player2");
+
+      if (res) {
+        history.push(`/game/${roomId}`);
+      }
+    } catch (error) {
+      return error;
+    }
+  };
+
+  const handleCreateRoom = async () => {
+    try {
+      const res = await api.createRoom("player1");
+
+      if (res) {
+        history.push(`/game/${res.data.room.id}`);
+      }
+    } catch (error) {
+      return error;
+    }
   };
 
   return (
@@ -30,9 +53,11 @@ const JoinRoom = () => {
             />
           </div>
           <div className="col-md-4">
-            <Link to="/game">
-              <Button type="secondary" label="Create Room" />
-            </Link>
+            <Button
+              type="secondary"
+              onClick={handleCreateRoom}
+              label="Create Room"
+            />
           </div>
         </div>
       </div>
