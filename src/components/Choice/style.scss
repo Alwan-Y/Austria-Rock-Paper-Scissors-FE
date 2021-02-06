@@ -1,0 +1,22 @@
+.choice {
+  &__btn {
+    background-color: none !important;
+    width: 9rem !important;
+    height: 9rem !important;
+  }
+
+  &__rock {
+    background-image: url("../../batu.png");
+    background-repeat: no-repeat !important;
+  }
+
+  &__paper {
+    background-image: url("../../kertas.png") !important;
+    background-repeat: no-repeat;
+  }
+
+  &__scissor {
+    background-image: url("../../gunting.png") !important;
+    background-repeat: no-repeat;
+  }
+}
