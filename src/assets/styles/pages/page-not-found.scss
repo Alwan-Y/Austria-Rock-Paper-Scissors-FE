@@ -1,0 +1,33 @@
+.page-not-found {
+  @include background(
+    "../images/index/404.jpg",
+    bottom,
+    $black,
+    0%,
+    $transparent,
+    20%,
+    $transparent,
+    70%,
+    $black,
+    100%
+  );
+
+  &__title {
+    @include caption(30vh, 1.25vw, $secondary);
+  }
+
+  &__caption {
+    @include caption(7vh, 0.25vw, $secondary);
+  }
+
+  &__body {
+    @include caption(2.5vh, 0.25vw, $secondary);
+  }
+
+  &__button {
+    @include caption(2.5vh, 0.2vw, $black);
+    margin-top: 4vh;
+    padding: 10px 50px 10px 50px;
+    border-radius: 5px;
+  }
+}

@@ -1,9 +1,19 @@
 .join-room {
-  height: 28rem;
-  padding: 8rem;
+  @include background(
+    "../../images/index/index3.jpg",
+    bottom,
+    $black,
+    0%,
+    $transparent,
+    20%,
+    $transparent,
+    70%,
+    $black,
+    100%
+  );
 
   &__button {
-    margin-top: 5rem;
+    margin-top: 25vh;
     margin-bottom: 3rem;
     margin-left: 16.5rem;
   }
