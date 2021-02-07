@@ -27,37 +27,40 @@ const RegisterBio = () => {
   return (
     <div>
       <NavigationBar />
-      <div className="container">
-        <div className="row">
-          <div className="col-sm"></div>
-          <div className="col-sm">
-            <Form
-              htmlFor="register-bio"
-              label="Enter your name"
-              type="text"
-              id="register-bio"
-              placeholder="Enter your name here"
-              className="form-control"
-              value={name}
-              onChange={(e) => {
-                console.log(e.target.value);
-                setName(e.target.value);
-              }}
-            />
-            <div className="row">
-              <div className="col-sm"></div>
-              <div className="col-sm">
-                <Button
-                  label="Register your name"
-                  type="button"
-                  block="true"
-                  type="primary"
-                  onClick={checkUser}
-                />
+      <div className="jumbotron jumbotron-fluid bio bio--background">
+        <div className="container">
+          <div className="row bio__possition">
+            <div className="col-lg"></div>
+            <div className="col-lg">
+              <Form
+                htmlFor="register-bio"
+                label="Your name?"
+                type="text"
+                id="register-bio"
+                placeholder="Enter your name here"
+                className="form-control bio__form"
+                classNameLabel="bio__label"
+                value={name}
+                onChange={(e) => {
+                  console.log(e.target.value);
+                  setName(e.target.value);
+                }}
+              />
+              <div className="row">
+                <div className="col-lg">
+                  <Button
+                    label="Register your name"
+                    type="button"
+                    block="true"
+                    type="primary"
+                    onClick={checkUser}
+                    className="bio__button"
+                  />
+                </div>
               </div>
             </div>
+            <div className="col"></div>
           </div>
-          <div className="col"></div>
         </div>
       </div>
       <Footer />

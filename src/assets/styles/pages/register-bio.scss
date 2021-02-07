@@ -1,0 +1,34 @@
+.bio {
+  @include background(
+    "../images/index/index9.jpg",
+    bottom,
+    $black,
+    0%,
+    $transparent,
+    20%,
+    $transparent,
+    70%,
+    $black,
+    100%
+  );
+
+  &__possition {
+    margin-top: 35vh;
+  }
+
+  &__label {
+    color: $secondary;
+    font-size: 20pt;
+    font-weight: bold;
+  }
+
+  &__form {
+    background-color: $secondary;
+  }
+
+  &__button {
+    color: $secondary;
+    font-weight: bold;
+    font-size: 14pt;
+  }
+}
