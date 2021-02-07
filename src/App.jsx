@@ -32,9 +32,9 @@ function App() {
         <Route path={ROUTES.GAME}>
           <Pages.Game />
         </Route>
-        {/* <Route path={ROUTES.PAGENOTFOUND} exact>
+        <Route path={ROUTES.PAGENOTFOUND} exact>
           <Pages.PageNotFound />
-        </Route> */}
+        </Route>
         <Route path={ROUTES.FORGOTPASSWORD} exact>
           <Pages.ForgotPassword />
         </Route>
