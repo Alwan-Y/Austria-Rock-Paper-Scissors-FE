@@ -44,9 +44,15 @@ const Login = () => {
       <NavigationBar />
       <div className="jumbotron jumbotron-fluid login login--background">
         <div className="container">
+<<<<<<< HEAD
           <div className="row login__position">
             <div className="col-lg"></div>
             <div className="col-lg">
+=======
+          <div className="row login__possition">
+            <div className="col-xl"></div>
+            <div className="col-xl">
+>>>>>>> suces design login
               <Form
                 htmlFor="email"
                 label="Login?"
@@ -57,6 +63,10 @@ const Login = () => {
                 classNameLabel="login__label logim__margin__1"
                 value={email}
                 onChange={(e) => {
+<<<<<<< HEAD
+=======
+                  console.log(e.target.value);
+>>>>>>> suces design login
                   setEmail(e.target.value);
                 }}
               />
@@ -69,11 +79,19 @@ const Login = () => {
                 classNameLabel="login__label"
                 value={password}
                 onChange={(e) => {
+<<<<<<< HEAD
+=======
+                  console.log(e.target.value);
+>>>>>>> suces design login
                   setPassword(e.target.value);
                 }}
               />
               <div className="row">
+<<<<<<< HEAD
                 <div className="col-lg">
+=======
+                <div className="col-xl">
+>>>>>>> suces design login
                   <Button
                     label="Login as guest?"
                     type="button"
@@ -82,7 +100,11 @@ const Login = () => {
                     className="login__button"
                   />
                 </div>
+<<<<<<< HEAD
                 <div className="col-lg">
+=======
+                <div className="col-xl">
+>>>>>>> suces design login
                   <Button
                     label="Login"
                     type="button"
@@ -94,7 +116,11 @@ const Login = () => {
                 </div>
               </div>
               <div className="row mt-3">
+<<<<<<< HEAD
                 <div className="col-lg">
+=======
+                <div className="col-xl">
+>>>>>>> suces design login
                   <Button
                     label="Register"
                     type="button"
