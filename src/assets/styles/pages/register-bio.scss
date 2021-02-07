@@ -12,7 +12,7 @@
     100%
   );
 
-  &__possition {
+  &__position {
     margin-top: 35vh;
   }
 
@@ -25,6 +25,6 @@
   }
 
   &__button {
-    @include button-custon($secondary, 14pt, bold);
+    @include button-custom($secondary, 14pt, bold);
   }
 }

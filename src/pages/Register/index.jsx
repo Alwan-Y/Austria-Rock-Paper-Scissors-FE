@@ -23,8 +23,6 @@ const Register = () => {
         history.push(ROUTES.LOGIN);
       }
     } catch (e) {
-      console.log(e.code);
-      console.log(e.message);
       alert("Upss something error");
     }
   };
@@ -34,7 +32,7 @@ const Register = () => {
       <NavigationBar />
       <div className="jumbotron jumbotron-fluid register register--background">
         <div className="container">
-          <div className="row register__possition">
+          <div className="row register__position">
             <div className="col-lg"></div>
             <div className="col-lg">
               <Form
@@ -47,7 +45,6 @@ const Register = () => {
                 classNameLabel="register__label"
                 value={email}
                 onChange={(e) => {
-                  console.log(e.target.value);
                   setEmail(e.target.value);
                 }}
               />
@@ -59,7 +56,6 @@ const Register = () => {
                 className="form-control register__form register__margin"
                 value={password}
                 onChange={(e) => {
-                  console.log(e.target.value);
                   setPassword(e.target.value);
                 }}
               />
@@ -71,7 +67,6 @@ const Register = () => {
                 className="form-control register__form register__margin"
                 value={confirmPassword}
                 onChange={(e) => {
-                  console.log(e.target.value);
                   setConfirmPassword(e.target.value);
                 }}
               />

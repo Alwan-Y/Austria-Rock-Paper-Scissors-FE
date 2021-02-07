@@ -21,7 +21,7 @@ const ForgotPassword = () => {
       <NavigationBar />
       <div className="jumbotron jumbotron-fluid forgot forgot--background">
         <div className="container">
-          <div className="row forgot__possition">
+          <div className="row forgot__position">
             <div className="col-lg"></div>
             <div className="col-lg">
               <Form
@@ -34,7 +34,6 @@ const ForgotPassword = () => {
                 classNameLabel="forgot__label"
                 value={email}
                 onChange={(e) => {
-                  console.log(e.target.value);
                   setEmail(e.target.value);
                 }}
               />
