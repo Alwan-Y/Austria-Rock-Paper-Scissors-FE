@@ -8,9 +8,12 @@ const Form = ({
   onChange,
   onClick,
   className,
+  classNameLabel,
 }) => (
   <div className="form-group">
-    <label htmlFor={htmlFor}>{label}</label>
+    <label className={classNameLabel} htmlFor={htmlFor}>
+      {label}
+    </label>
     <input
       type={type}
       id={id}

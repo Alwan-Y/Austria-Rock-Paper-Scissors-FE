@@ -5,6 +5,7 @@ import Register from "./Register";
 import Login from "./Login";
 import RegisterBio from "./Register-bio";
 import PageNotFound from "./PageNotFound";
+import ForgotPassword from "./forgot-password";
 
 const Pages = {
   Home,
@@ -14,6 +15,7 @@ const Pages = {
   Login,
   RegisterBio,
   PageNotFound,
+  ForgotPassword,
 };
 
 export default Pages;

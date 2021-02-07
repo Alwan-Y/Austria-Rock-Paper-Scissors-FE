@@ -35,6 +35,9 @@ function App() {
         {/* <Route path={ROUTES.PAGENOTFOUND} exact>
           <Pages.PageNotFound />
         </Route> */}
+        <Route path={ROUTES.FORGOTPASSWORD} exact>
+          <Pages.ForgotPassword />
+        </Route>
         <Redirect to={ROUTES.PAGENOTFOUND} />
       </Switch>
     </Router>
