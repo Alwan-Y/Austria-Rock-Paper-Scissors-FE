@@ -39,7 +39,7 @@
   }
 
   &__button {
-    @include button-custon($secondary, 12pt, bold);
+    @include button-custom($secondary, 12pt, bold);
   }
 
   &__margin__2 {
