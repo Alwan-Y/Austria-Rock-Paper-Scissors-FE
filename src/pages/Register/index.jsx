@@ -75,7 +75,6 @@ const Register = () => {
                 <div className="col-lg">
                   <Button
                     label="Register"
-                    type="button"
                     block="true"
                     type="primary"
                     onClick={signUp}

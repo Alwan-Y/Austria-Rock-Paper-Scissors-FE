@@ -46,7 +46,6 @@ const RegisterBio = () => {
                 <div className="col-lg">
                   <Button
                     label="Register your name"
-                    type="button"
                     block="true"
                     type="primary"
                     onClick={checkUser}
