@@ -50,9 +50,14 @@ const Login = () => {
             <div className="col-lg">
 =======
           <div className="row login__possition">
+<<<<<<< HEAD
             <div className="col-xl"></div>
             <div className="col-xl">
 >>>>>>> suces design login
+=======
+            <div className="col-lg"></div>
+            <div className="col-lg">
+>>>>>>> succes design register
               <Form
                 htmlFor="email"
                 label="Login?"
@@ -88,10 +93,14 @@ const Login = () => {
               />
               <div className="row">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div className="col-lg">
 =======
                 <div className="col-xl">
 >>>>>>> suces design login
+=======
+                <div className="col-lg">
+>>>>>>> succes design register
                   <Button
                     label="Login as guest?"
                     type="button"
@@ -101,10 +110,14 @@ const Login = () => {
                   />
                 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div className="col-lg">
 =======
                 <div className="col-xl">
 >>>>>>> suces design login
+=======
+                <div className="col-lg">
+>>>>>>> succes design register
                   <Button
                     label="Login"
                     type="button"
@@ -117,10 +130,14 @@ const Login = () => {
               </div>
               <div className="row mt-3">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div className="col-lg">
 =======
                 <div className="col-xl">
 >>>>>>> suces design login
+=======
+                <div className="col-lg">
+>>>>>>> succes design register
                   <Button
                     label="Register"
                     type="button"
