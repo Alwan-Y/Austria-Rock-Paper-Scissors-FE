@@ -5,6 +5,7 @@ const ROUTES = {
 
   REGISTER: "/register",
   REGISTERBIO: "/register-bio",
+  UPDATEBIO: "/update-bio",
   LOGIN: "/auth/login",
 
   JOINROOM: "/joinroom",
