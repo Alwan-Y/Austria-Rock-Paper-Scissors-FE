@@ -12,7 +12,11 @@
     100%
   );
 
+<<<<<<< HEAD
   &__position {
+=======
+  &__possition {
+>>>>>>> suces design login
     margin-top: 17vh;
 
     @include media-breakpoint-up(sm) {
@@ -21,7 +25,13 @@
   }
 
   &__label {
+<<<<<<< HEAD
     @include label($secondary, 20pt, bold);
+=======
+    color: $secondary;
+    font-size: 20pt;
+    font-weight: bold;
+>>>>>>> suces design login
   }
 
   &__form {
@@ -29,11 +39,23 @@
   }
 
   &__button__2 {
+<<<<<<< HEAD
     @include button-custom($primary, 12pt, bold);
   }
 
   &__button {
     @include button-custom($secondary, 12pt, bold);
+=======
+    color: $primary;
+    font-weight: bold;
+    font-size: 12pt;
+  }
+
+  &__button {
+    color: $secondary;
+    font-weight: bold;
+    font-size: 12pt;
+>>>>>>> suces design login
   }
 
   &__margin__2 {
