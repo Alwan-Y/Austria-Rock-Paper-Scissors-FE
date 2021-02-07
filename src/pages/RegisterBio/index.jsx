@@ -11,17 +11,14 @@ const RegisterBio = () => {
   const [name, setName] = useState("");
 
   const fetchUser = fire.auth().currentUser;
-  console.log(fetchUser);
 
   const checkUser = async () => {
     const user = await fire.auth().currentUser;
 
-    console.log(user.displayName);
     const updateUser = await user.updateProfile({
       displayName: name,
     });
     alert("Succes update display name");
-    console.log(user.displayName);
   };
 
   return (
@@ -29,7 +26,7 @@ const RegisterBio = () => {
       <NavigationBar />
       <div className="jumbotron jumbotron-fluid bio bio--background">
         <div className="container">
-          <div className="row bio__possition">
+          <div className="row bio__position">
             <div className="col-lg"></div>
             <div className="col-lg">
               <Form
@@ -42,7 +39,6 @@ const RegisterBio = () => {
                 classNameLabel="bio__label"
                 value={name}
                 onChange={(e) => {
-                  console.log(e.target.value);
                   setName(e.target.value);
                 }}
               />
