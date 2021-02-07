@@ -26,6 +26,27 @@ class api {
       return error;
     }
   };
+
+  static getGameRoom = async (id) => {
+    try {
+      const res = await axios.get(`${baseUrl}/games/${id}`);
+
+      return await res;
+    } catch (error) {
+      return error;
+    }
+  };
+
+  static patchChoice = async (id, username, choice) => {
+    try {
+      const res = await axios.patch(`${baseUrl}/games/${id}`, {
+        username,
+        choice,
+      });
+    } catch (error) {
+      return error;
+    }
+  };
 }
 
 export default api;

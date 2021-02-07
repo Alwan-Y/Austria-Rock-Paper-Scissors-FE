@@ -4,11 +4,15 @@
   border-radius: 10px;
   color: #2e2e2e;
   margin: 5rem auto;
-  height: 30rem;
+  height: 40rem;
   box-shadow: 5px 2px 33px -14px #2e2e2e;
 
+  &__choice-row {
+    width: 100%;
+    margin-left: 12rem;
+  }
+
   &__choice {
-    margin-top: 6rem;
-    margin-left: 18rem;
+    width: 10rem;
   }
 }
