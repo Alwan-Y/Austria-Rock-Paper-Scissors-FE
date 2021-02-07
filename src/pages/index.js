@@ -7,7 +7,7 @@ import JoinRoom from "./JoinRoom";
 import Game from "./Game";
 import Dashboard from "./Dashboard";
 import PageNotFound from "./PageNotFound";
-import ForgotPassword from "./forgot-password";
+import ForgotPassword from "./ForgotPassword";
 
 const Pages = {
   Home,

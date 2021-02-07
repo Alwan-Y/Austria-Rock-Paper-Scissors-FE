@@ -12,7 +12,7 @@
     100%
   );
 
-  &__possition {
+  &__position {
     margin-top: 20vh;
 
     @include media-breakpoint-up(sm) {
@@ -33,7 +33,7 @@
   }
 
   &__button {
-    @include button-custon($secondary, 12pt, bold);
+    @include button-custom($secondary, 12pt, bold);
     margin-top: 20px;
   }
 }

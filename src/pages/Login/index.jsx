@@ -20,8 +20,6 @@ const Login = () => {
         checkUser();
       }
     } catch (e) {
-      console.log(e.code);
-      console.log(e.message);
       alert("Upss something error");
     }
   };
@@ -46,7 +44,7 @@ const Login = () => {
       <NavigationBar />
       <div className="jumbotron jumbotron-fluid login login--background">
         <div className="container">
-          <div className="row login__possition">
+          <div className="row login__position">
             <div className="col-lg"></div>
             <div className="col-lg">
               <Form
@@ -59,7 +57,6 @@ const Login = () => {
                 classNameLabel="login__label logim__margin__1"
                 value={email}
                 onChange={(e) => {
-                  console.log(e.target.value);
                   setEmail(e.target.value);
                 }}
               />
@@ -72,7 +69,6 @@ const Login = () => {
                 classNameLabel="login__label"
                 value={password}
                 onChange={(e) => {
-                  console.log(e.target.value);
                   setPassword(e.target.value);
                 }}
               />
