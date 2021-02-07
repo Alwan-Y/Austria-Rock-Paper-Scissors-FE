@@ -10,6 +10,7 @@ const Login = () => {
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState(false);
 
   const signIn = async () => {
     try {
@@ -20,6 +21,7 @@ const Login = () => {
         checkUser();
       }
     } catch (e) {
+      setError(true);
       alert("Upss something error");
     }
   };
@@ -44,34 +46,21 @@ const Login = () => {
       <NavigationBar />
       <div className="jumbotron jumbotron-fluid login login--background">
         <div className="container">
-<<<<<<< HEAD
           <div className="row login__position">
             <div className="col-lg"></div>
             <div className="col-lg">
-=======
-          <div className="row login__possition">
-<<<<<<< HEAD
-            <div className="col-xl"></div>
-            <div className="col-xl">
->>>>>>> suces design login
-=======
-            <div className="col-lg"></div>
-            <div className="col-lg">
->>>>>>> succes design register
               <Form
                 htmlFor="email"
                 label="Login?"
                 type="email"
                 id="email"
                 placeholder="Enter email"
-                className="form-control login__form"
+                className={`form-control ${error ? "is-invalid" : ""
+                  } login__form`}
                 classNameLabel="login__label logim__margin__1"
                 value={email}
                 onChange={(e) => {
-<<<<<<< HEAD
-=======
-                  console.log(e.target.value);
->>>>>>> suces design login
+                  setError(false);
                   setEmail(e.target.value);
                 }}
               />
@@ -80,47 +69,27 @@ const Login = () => {
                 type="password"
                 id="password"
                 placeholder="Enter Password"
-                className="form-control login__form login__margin__2"
+                className={`form-control ${error ? "is-invalid" : ""
+                  } login__form login__margin__2`}
                 classNameLabel="login__label"
                 value={password}
                 onChange={(e) => {
-<<<<<<< HEAD
-=======
-                  console.log(e.target.value);
->>>>>>> suces design login
+                  setError(false);
                   setPassword(e.target.value);
                 }}
               />
               <div className="row">
-<<<<<<< HEAD
-<<<<<<< HEAD
                 <div className="col-lg">
-=======
-                <div className="col-xl">
->>>>>>> suces design login
-=======
-                <div className="col-lg">
->>>>>>> succes design register
                   <Button
                     label="Login as guest?"
-                    type="button"
                     block="true"
                     type="transparent"
                     className="login__button"
                   />
                 </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
                 <div className="col-lg">
-=======
-                <div className="col-xl">
->>>>>>> suces design login
-=======
-                <div className="col-lg">
->>>>>>> succes design register
                   <Button
                     label="Login"
-                    type="button"
                     block="true"
                     type="danger"
                     onClick={signIn}
@@ -129,18 +98,9 @@ const Login = () => {
                 </div>
               </div>
               <div className="row mt-3">
-<<<<<<< HEAD
-<<<<<<< HEAD
                 <div className="col-lg">
-=======
-                <div className="col-xl">
->>>>>>> suces design login
-=======
-                <div className="col-lg">
->>>>>>> succes design register
                   <Button
                     label="Register"
-                    type="button"
                     block="true"
                     type="primary"
                     className="login__button"
@@ -150,7 +110,6 @@ const Login = () => {
               <div className="row">
                 <Button
                   label="Forgot password?"
-                  type="button"
                   block="true"
                   type="transparent"
                   className="login__button"
