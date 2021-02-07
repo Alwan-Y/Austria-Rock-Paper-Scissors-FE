@@ -12,6 +12,7 @@ const ROUTES = {
   DASHBOARD: "/dashboard",
 
   PAGENOTFOUND: "/404",
+  FORGOTPASSWORD: "/forgot-password",
 };
 
 export default ROUTES;

@@ -7,6 +7,7 @@ import JoinRoom from "./JoinRoom";
 import Game from "./Game";
 import Dashboard from "./Dashboard";
 import PageNotFound from "./PageNotFound";
+import ForgotPassword from "./forgot-password";
 
 const Pages = {
   Home,
@@ -18,6 +19,7 @@ const Pages = {
   Game,
   Dashboard,
   PageNotFound,
+  ForgotPassword,
 };
 
 export default Pages;

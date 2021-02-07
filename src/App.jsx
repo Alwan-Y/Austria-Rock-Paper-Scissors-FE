@@ -40,6 +40,12 @@ function App() {
         </Route>
         <Route path={ROUTES.PAGENOTFOUND} exact>
           <Pages.PageNotFound />
+<<<<<<< HEAD
+=======
+        </Route> */}
+        <Route path={ROUTES.FORGOTPASSWORD} exact>
+          <Pages.ForgotPassword />
+>>>>>>> secces create forgot password
         </Route>
         <Redirect to={ROUTES.PAGENOTFOUND} />
       </Switch>
