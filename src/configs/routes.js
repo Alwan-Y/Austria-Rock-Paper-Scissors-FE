@@ -11,6 +11,7 @@ const ROUTES = {
   GAME: "/game/:id",
 
   PAGENOTFOUND: "/404",
+  FORGOTPASSWORD: "/forgot-password",
 };
 
 export default ROUTES;
