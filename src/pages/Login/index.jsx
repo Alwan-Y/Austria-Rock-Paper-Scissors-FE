@@ -47,8 +47,8 @@ const Login = () => {
       <div className="jumbotron jumbotron-fluid login login--background">
         <div className="container">
           <div className="row login__possition">
-            <div className="col-xl"></div>
-            <div className="col-xl">
+            <div className="col-lg"></div>
+            <div className="col-lg">
               <Form
                 htmlFor="email"
                 label="Login?"
@@ -77,7 +77,7 @@ const Login = () => {
                 }}
               />
               <div className="row">
-                <div className="col-xl">
+                <div className="col-lg">
                   <Button
                     label="Login as guest?"
                     type="button"
@@ -86,7 +86,7 @@ const Login = () => {
                     className="login__button"
                   />
                 </div>
-                <div className="col-xl">
+                <div className="col-lg">
                   <Button
                     label="Login"
                     type="button"
@@ -98,7 +98,7 @@ const Login = () => {
                 </div>
               </div>
               <div className="row mt-3">
-                <div className="col-xl">
+                <div className="col-lg">
                   <Button
                     label="Register"
                     type="button"

@@ -32,63 +32,65 @@ const Register = () => {
   return (
     <div>
       <NavigationBar />
-      <div className="container">
-        <div className="row">
-          <div className="col-sm"></div>
-          <div className="col-sm">
-            <Form
-              htmlFor="email"
-              label="Email Addres"
-              type="email"
-              id="email"
-              placeholder="Enter email"
-              className="form-control"
-              value={email}
-              onChange={(e) => {
-                console.log(e.target.value);
-                setEmail(e.target.value);
-              }}
-            />
-            <Form
-              htmlFor="password"
-              label="Password"
-              type="password"
-              id="password"
-              placeholder="Enter Password"
-              className="form-control"
-              value={password}
-              onChange={(e) => {
-                console.log(e.target.value);
-                setPassword(e.target.value);
-              }}
-            />
-            <Form
-              htmlFor="confirm-password"
-              label="Confirm Password"
-              type="password"
-              id="confirm-password"
-              placeholder="Enter Confirm Password"
-              className="form-control"
-              value={confirmPassword}
-              onChange={(e) => {
-                console.log(e.target.value);
-                setConfirmPassword(e.target.value);
-              }}
-            />
-            <div className="row">
-              <div className="col-sm"></div>
-              <div className="col-sm">
-                <Button
-                  label="Register"
-                  type="button"
-                  block="true"
-                  type="primary"
-                  onClick={signUp}
-                />
+      <div className="jumbotron jumbotron-fluid register register--background">
+        <div className="container">
+          <div className="row register__possition">
+            <div className="col-lg"></div>
+            <div className="col-lg">
+              <Form
+                htmlFor="email"
+                label="Register your account"
+                type="email"
+                id="email"
+                placeholder="Enter email"
+                className="form-control register__form"
+                classNameLabel="register__label"
+                value={email}
+                onChange={(e) => {
+                  console.log(e.target.value);
+                  setEmail(e.target.value);
+                }}
+              />
+              <Form
+                htmlFor="password"
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+                className="form-control register__form register__margin"
+                value={password}
+                onChange={(e) => {
+                  console.log(e.target.value);
+                  setPassword(e.target.value);
+                }}
+              />
+              <Form
+                htmlFor="confirm-password"
+                type="password"
+                id="confirm-password"
+                placeholder="Enter Confirm Password"
+                className="form-control register__form register__margin"
+                value={confirmPassword}
+                onChange={(e) => {
+                  console.log(e.target.value);
+                  setConfirmPassword(e.target.value);
+                }}
+              />
+              <div className="row">
+                <div className="col-lg"></div>
+                <div className="col-lg">
+                  <Button
+                    label="Register"
+                    type="button"
+                    block="true"
+                    type="primary"
+                    onClick={signUp}
+                    className="register__button"
+                  />
+                </div>
               </div>
             </div>
+            <div className="col"></div>
           </div>
-          <div className="col"></div>
         </div>
       </div>
       <Footer />

@@ -22,8 +22,8 @@ const ForgotPassword = () => {
       <div className="jumbotron jumbotron-fluid forgot forgot--background">
         <div className="container">
           <div className="row forgot__possition">
-            <div className="col-xl"></div>
-            <div className="col-xl">
+            <div className="col-lg"></div>
+            <div className="col-lg">
               <Form
                 htmlFor="forgot-password"
                 label="Forgot password?"
@@ -39,7 +39,7 @@ const ForgotPassword = () => {
                 }}
               />
               <div className="row">
-                <div className="col-xl">
+                <div className="col-lg">
                   <Button
                     label="Send reset password"
                     type="button"
