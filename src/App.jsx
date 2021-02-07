@@ -17,8 +17,14 @@ function App() {
         <Route path={ROUTES.HOMEPAGE} exact>
           <Pages.Home />
         </Route>
+        <Route path={ROUTES.FEEDBACK} exact>
+          <Pages.Feedback />
+        </Route>
         <Route path={ROUTES.REGISTER} exact>
           <Pages.Register />
+        </Route>
+        <Route path={ROUTES.REGISTERBIO} exact>
+          <Pages.RegisterBio />
         </Route>
         <Route path={ROUTES.LOGIN} exact>
           <Pages.Login />
@@ -26,15 +32,12 @@ function App() {
         <Route path={ROUTES.JOINROOM} exact>
           <Pages.JoinRoom />
         </Route>
-        <Route path={ROUTES.REGISTERBIO} exact>
-          <Pages.RegisterBio />
-        </Route>
         <Route path={ROUTES.GAME}>
           <Pages.Game />
         </Route>
-        {/* <Route path={ROUTES.PAGENOTFOUND} exact>
+        <Route path={ROUTES.PAGENOTFOUND} exact>
           <Pages.PageNotFound />
-        </Route> */}
+        </Route>
         <Redirect to={ROUTES.PAGENOTFOUND} />
       </Switch>
     </Router>

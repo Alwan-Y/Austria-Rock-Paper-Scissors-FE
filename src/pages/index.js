@@ -1,18 +1,20 @@
 import Home from "./Home";
+import Feedback from './Feedback';
+import Register from "./Register";
+import RegisterBio from "./RegisterBio";
+import Login from "./Login";
 import JoinRoom from "./JoinRoom";
 import Game from "./Game";
-import Register from "./Register";
-import Login from "./Login";
-import RegisterBio from "./Register-bio";
 import PageNotFound from "./PageNotFound";
 
 const Pages = {
   Home,
+  Feedback,
+  Register,
+  RegisterBio,
+  Login,
   JoinRoom,
   Game,
-  Register,
-  Login,
-  RegisterBio,
   PageNotFound,
 };
 

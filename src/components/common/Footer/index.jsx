@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="text-center social-media-bar" id="">
         <div className="container container-fluid">
           <div className="row">
-            <div className="col-lg-4 offset-lg-8 my-2">
+            <div className="col-lg-4 offset-lg-8 my-2 p-0">
               <a href="https://facebook.com/">
                 <span className="social-media-bar__logo social-media-bar__logo--facebook">
                   <svg
@@ -84,13 +84,13 @@ const Footer = () => {
                 <Link to="/privacy-policy" className="m-0 footer__link">
                   <span>Privacy Policy </span>
                 </Link>
-                |
+                -
                 <Link to="/terms-of-services" className="m-0 footer__link">
-                  <span>Terms of Services </span>
+                  <span> Terms of Services </span>
                 </Link>
-                |
+                -
                 <Link to="/code-of-conduct" className="m-0 footer__link">
-                  <span>Code of Conduct</span>
+                  <span> Code of Conduct</span>
                 </Link>
               </div>
             </div>

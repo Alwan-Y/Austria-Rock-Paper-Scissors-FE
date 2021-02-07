@@ -1,11 +1,15 @@
 const ROUTES = {
   ROOT: "/",
   HOMEPAGE: "/home",
-  REGISTER: "/auth/register",
-  LOGIN: "/auth/login",
-  JOINROOM: "/joinroom",
+  FEEDBACK: "/feedback",
+
+  REGISTER: "/register",
   REGISTERBIO: "/register-bio",
+  LOGIN: "/auth/login",
+
+  JOINROOM: "/joinroom",
   GAME: "/game/:id",
+
   PAGENOTFOUND: "/404",
 };
 

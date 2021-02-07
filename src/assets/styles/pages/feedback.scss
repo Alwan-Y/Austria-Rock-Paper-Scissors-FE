@@ -1,0 +1,13 @@
+.feedback {
+  @include background("../images/index/index6.jpg", bottom, $black, 0%, $transparent, 20%, $transparent, 70%, $black, 100%);
+
+  &__title {
+    @include caption();
+  }
+
+  &-form {
+    &__label {
+      color: $secondary;
+    }
+  }
+}
