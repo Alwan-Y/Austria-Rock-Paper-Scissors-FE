@@ -1,0 +1,43 @@
+.register {
+  @include background(
+    "../images/index/index8.jpg",
+    bottom,
+    $black,
+    0%,
+    $transparent,
+    20%,
+    $transparent,
+    70%,
+    $black,
+    100%
+  );
+
+  &__possition {
+    margin-top: 20vh;
+
+    @include media-breakpoint-up(sm) {
+      margin-top: 27vh;
+    }
+  }
+
+  &__label {
+    color: $secondary;
+    font-size: 20pt;
+    font-weight: bold;
+  }
+
+  &__form {
+    background-color: $secondary;
+  }
+
+  &__margin {
+    margin-top: -20px;
+  }
+
+  &__button {
+    margin-top: 20px;
+    color: $secondary;
+    font-weight: bold;
+    font-size: 12pt;
+  }
+}
