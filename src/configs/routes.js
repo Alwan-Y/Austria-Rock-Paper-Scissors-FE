@@ -3,12 +3,13 @@ const ROUTES = {
   HOMEPAGE: "/home",
   FEEDBACK: "/feedback",
 
+  REGISTER: "/register",
+  REGISTERBIO: "/register-bio",
+  LOGIN: "/auth/login",
+
   JOINROOM: "/joinroom",
   GAME: "/game/:id",
 
-  SIGNUP: "/auth/signup",
-  LOGIN: "/auth/login",
-  
   PAGENOTFOUND: "/404",
 };
 

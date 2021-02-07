@@ -1,6 +1,17 @@
 .home {
-  @include background("../images/index/index1.jpg", bottom, $black, 0%, $transparent, 20%, $transparent, 70%, $black, 100%);
-  
+  @include background(
+    "../images/index/index1.jpg",
+    bottom,
+    $black,
+    0%,
+    $transparent,
+    20%,
+    $transparent,
+    70%,
+    $black,
+    100%
+  );
+
   &__title {
     @include caption(8vh, 1.25vw);
     margin-top: 25vh;
@@ -34,7 +45,7 @@
       margin: auto;
     }
 
-    &__indicators{
+    &__indicators {
       li {
         width: 10px;
         height: 10px;
@@ -81,4 +92,3 @@
     }
   }
 }
-

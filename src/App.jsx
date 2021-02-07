@@ -20,16 +20,22 @@ function App() {
         <Route path={ROUTES.FEEDBACK} exact>
           <Pages.Feedback />
         </Route>
-        {/* <Route path={ROUTES.LOGIN} exact>
-          <Pages.LoginPage />
-        </Route> */}
+        <Route path={ROUTES.REGISTER} exact>
+          <Pages.Register />
+        </Route>
+        <Route path={ROUTES.REGISTERBIO} exact>
+          <Pages.RegisterBio />
+        </Route>
+        <Route path={ROUTES.LOGIN} exact>
+          <Pages.Login />
+        </Route>
         <Route path={ROUTES.JOINROOM} exact>
           <Pages.JoinRoom />
         </Route>
         <Route path={ROUTES.GAME}>
           <Pages.Game />
         </Route>
-        <Route path={ROUTES.PAGENOTFOUND}>
+        <Route path={ROUTES.PAGENOTFOUND} exact>
           <Pages.PageNotFound />
         </Route>
         <Redirect to={ROUTES.PAGENOTFOUND} />
