@@ -1,5 +1,16 @@
 .page-not-found {
-  @include background("../images/index/404.jpg", bottom, $black, 0%, $transparent, 20%, $transparent, 70%, $black, 100%);
+  @include background(
+    "../images/index/404.jpg",
+    bottom,
+    $black,
+    0%,
+    $transparent,
+    20%,
+    $transparent,
+    70%,
+    $black,
+    100%
+  );
 
   &__title {
     @include caption(30vh, 1.25vw, $secondary);

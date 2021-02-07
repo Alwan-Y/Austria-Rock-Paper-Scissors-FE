@@ -1,5 +1,16 @@
 .join-room {
-  @include background("../../images/index/index3.jpg", bottom, $black, 0%, $transparent, 20%, $transparent, 70%, $black, 100%);
+  @include background(
+    "../../images/index/index3.jpg",
+    bottom,
+    $black,
+    0%,
+    $transparent,
+    20%,
+    $transparent,
+    70%,
+    $black,
+    100%
+  );
 
   &__button {
     margin-top: 25vh;

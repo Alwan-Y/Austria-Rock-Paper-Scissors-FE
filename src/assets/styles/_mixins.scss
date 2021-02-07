@@ -6,13 +6,36 @@
   text-transform: uppercase;
 }
 
-@mixin background($url, $direction, $color1: $black, $percent1: 0%, $color2: $transparent, $percent2: 10%, $color3: $transparent, $percent3: 90%, $color4: $black, $percent4: 100%) {
+@mixin background(
+  $url,
+  $direction,
+  $color1: $black,
+  $percent1: 0%,
+  $color2: $transparent,
+  $percent2: 10%,
+  $color3: $transparent,
+  $percent3: 90%,
+  $color4: $black,
+  $percent4: 100%
+) {
   &--background {
-  background-image: linear-gradient(to $direction, $color1 $percent1, $color2 $percent2, $color3 $percent3, $color4 $percent4), url($url);
+    background-image: linear-gradient(
+        to $direction,
+        $color1 $percent1,
+        $color2 $percent2,
+        $color3 $percent3,
+        $color4 $percent4
+      ),
+      url($url);
   }
 }
 
-@mixin svg-animation($animation-name, $after-color: $white, $stroke-dasharray: 0, $stroke-dashoffset: 0) {
+@mixin svg-animation(
+  $animation-name,
+  $after-color: $white,
+  $stroke-dasharray: 0,
+  $stroke-dashoffset: 0
+) {
   &--#{$animation-name} path {
     stroke-dasharray: $stroke-dasharray;
     stroke-dashoffset: $stroke-dashoffset;

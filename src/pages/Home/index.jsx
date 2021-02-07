@@ -11,7 +11,9 @@ const Home = () => (
       <div className="jumbotron jumbotron-fluid home home--background">
         <div className="container text-uppercase font-weight-bold">
           <div className="home__title">Play traditional game</div>
-          <div className="home__caption">Experience new traditional game play</div>
+          <div className="home__caption">
+            Experience new traditional game play
+          </div>
           <Link to="/joinroom">
             <Button type="primary" label="PLAY NOW" className="home__button" />
           </Link>
@@ -29,7 +31,6 @@ const Home = () => (
         <div className="d-flex align-items-center">
           <div className="row mx-auto">
             <div className="col-lg-6">
-
               {/* Leaderboard Table */}
               <table className="table home-leaderboard__table">
                 <thead>
@@ -62,45 +63,92 @@ const Home = () => (
 
             {/* Carousel */}
             <div className="col-lg-6">
-              <div id="carousel-game-option" className="carousel slide home-carousel" data-interval="false">
+              <div
+                id="carousel-game-option"
+                className="carousel slide home-carousel"
+                data-interval="false"
+              >
                 <ul className="carousel-indicators home-carousel__indicators">
-                  <li data-target="#carousel-game-option" data-slide-to="0" className="active"></li>
-                  <li data-target="#carousel-game-option" data-slide-to="1"></li>
-                  <li data-target="#carousel-game-option" data-slide-to="2"></li>
-                  <li data-target="#carousel-game-option" data-slide-to="3"></li>
-                  <li data-target="#carousel-game-option" data-slide-to="4"></li>
+                  <li
+                    data-target="#carousel-game-option"
+                    data-slide-to="0"
+                    className="active"
+                  ></li>
+                  <li
+                    data-target="#carousel-game-option"
+                    data-slide-to="1"
+                  ></li>
+                  <li
+                    data-target="#carousel-game-option"
+                    data-slide-to="2"
+                  ></li>
+                  <li
+                    data-target="#carousel-game-option"
+                    data-slide-to="3"
+                  ></li>
+                  <li
+                    data-target="#carousel-game-option"
+                    data-slide-to="4"
+                  ></li>
                 </ul>
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <Link to="/game">
-                      <img className="d-block w-75" src={img} alt="First slide" />
+                      <img
+                        className="d-block w-75"
+                        src={img}
+                        alt="First slide"
+                      />
                     </Link>
                   </div>
                   <div className="carousel-item">
-                    <img className="d-block w-75" src={img} alt="Second slide" />
+                    <img
+                      className="d-block w-75"
+                      src={img}
+                      alt="Second slide"
+                    />
                   </div>
                   <div className="carousel-item">
                     <img className="d-block w-75" src={img} alt="Third slide" />
                   </div>
                   <div className="carousel-item">
-                    <img className="d-block w-75" src={img} alt="Fourth slide" />
+                    <img
+                      className="d-block w-75"
+                      src={img}
+                      alt="Fourth slide"
+                    />
                   </div>
                   <div className="carousel-item">
                     <img className="d-block w-75" src={img} alt="Fifth slide" />
                   </div>
                 </div>
-                <a className="carousel-control-prev" href="#carousel-game-option" role="button" data-slide="prev">
-                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <a
+                  className="carousel-control-prev"
+                  href="#carousel-game-option"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    className="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
                   <span className="sr-only">Previous</span>
                 </a>
-                <a className="carousel-control-next" href="#carousel-game-option" role="button" data-slide="next">
-                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <a
+                  className="carousel-control-next"
+                  href="#carousel-game-option"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    className="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
                   <span className="sr-only">Next</span>
                 </a>
               </div>
             </div>
             {/* End of Carousel */}
-
           </div>
         </div>
       </div>
@@ -110,7 +158,9 @@ const Home = () => (
       <div className="container">
         <div className="row mt-5 text-uppercase text-left">
           <div className="col-5">
-            <div className="font-weight-bold home-sysreq__title">System Requirement</div>
+            <div className="font-weight-bold home-sysreq__title">
+              System Requirement
+            </div>
           </div>
         </div>
         <div className="row mt-5 text-right">
