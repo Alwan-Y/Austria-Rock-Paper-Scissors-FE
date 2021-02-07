@@ -1,6 +1,5 @@
 .bio {
-  @include background(
-    "../images/index/index9.jpg",
+  @include background("../images/index/index9.jpg",
     bottom,
     $black,
     0%,
@@ -9,8 +8,7 @@
     $transparent,
     70%,
     $black,
-    100%
-  );
+    100%);
 
   &__position {
     margin-top: 35vh;
