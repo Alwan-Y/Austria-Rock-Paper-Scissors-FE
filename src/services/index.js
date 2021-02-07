@@ -43,6 +43,8 @@ class api {
         username,
         choice,
       });
+
+      return await res;
     } catch (error) {
       return error;
     }

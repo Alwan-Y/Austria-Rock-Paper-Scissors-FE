@@ -29,7 +29,7 @@
   }
 
   &-leaderboard {
-    @include background("../images/index/index1.jpg", bottom);
+    @include background("../images/index/index2.jpg", bottom);
 
     &__title {
       @include caption();
