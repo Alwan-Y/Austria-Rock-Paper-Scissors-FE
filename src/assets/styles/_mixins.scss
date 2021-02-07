@@ -48,6 +48,7 @@
           stroke-dashoffset: $stroke-dashoffset;
           fill: $transparent;
         }
+
         100% {
           stroke-dashoffset: $stroke-dasharray;
           stroke: $after-color;
@@ -56,4 +57,16 @@
       }
     }
   }
+}
+
+@mixin label($color, $font-size, $font-weight) {
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin button-custon($color, $font-weight, $font-size) {
+  color: $color;
+  font-weight: $font-size;
+  font-size: $font-size;
 }

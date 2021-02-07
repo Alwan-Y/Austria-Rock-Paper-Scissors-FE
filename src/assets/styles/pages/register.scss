@@ -21,9 +21,7 @@
   }
 
   &__label {
-    color: $secondary;
-    font-size: 20pt;
-    font-weight: bold;
+    @include label($secondary, 20pt, bold);
   }
 
   &__form {
@@ -35,9 +33,7 @@
   }
 
   &__button {
+    @include button-custon($secondary, 12pt, bold);
     margin-top: 20px;
-    color: $secondary;
-    font-weight: bold;
-    font-size: 12pt;
   }
 }
