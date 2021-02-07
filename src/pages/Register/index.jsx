@@ -50,9 +50,8 @@ const Register = () => {
                 type="email"
                 id="email"
                 placeholder="Enter email"
-                className={`form-control  ${
-                  error ? "is-invalid" : ""
-                } register__form`}
+                className={`form-control  ${error ? "is-invalid" : ""
+                  } register__form`}
                 classNameLabel="register__label"
                 value={email}
                 onChange={(e) => {
@@ -65,9 +64,8 @@ const Register = () => {
                 type="text"
                 id="username"
                 placeholder="Enter Username"
-                className={`form-control ${
-                  error ? "is-invalid" : ""
-                } register__form register__margin`}
+                className={`form-control ${error ? "is-invalid" : ""
+                  } register__form register__margin`}
                 value={username}
                 onChange={(e) => {
                   setError(false);
@@ -79,9 +77,8 @@ const Register = () => {
                 type="password"
                 id="password"
                 placeholder="Enter Password"
-                className={`form-control ${
-                  error ? "is-invalid" : ""
-                } register__form register__margin`}
+                className={`form-control ${error ? "is-invalid" : ""
+                  } register__form register__margin`}
                 value={password}
                 onChange={(e) => {
                   setError(false);
@@ -93,9 +90,8 @@ const Register = () => {
                 type="password"
                 id="confirm-password"
                 placeholder="Enter Confirm Password"
-                className={`form-control ${
-                  error ? "is-invalid" : ""
-                } register__form register__margin`}
+                className={`form-control ${error ? "is-invalid" : ""
+                  } register__form register__margin`}
                 value={confirmPassword}
                 onChange={(e) => {
                   setError(false);
