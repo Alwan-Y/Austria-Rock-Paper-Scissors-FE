@@ -41,6 +41,9 @@ function App() {
         <Route path={ROUTES.FORGOTPASSWORD} exact>
           <Pages.ForgotPassword />
         </Route>
+        <Route path={ROUTES.UPDATEBIO} exact>
+          <Pages.RegisterBio />
+        </Route>
         <Redirect to={ROUTES.PAGENOTFOUND} />
       </Switch>
     </Router>
