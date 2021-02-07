@@ -76,7 +76,6 @@ const Login = () => {
                 <div className="col-lg">
                   <Button
                     label="Login as guest?"
-                    type="button"
                     block="true"
                     type="transparent"
                     className="login__button"
@@ -85,7 +84,6 @@ const Login = () => {
                 <div className="col-lg">
                   <Button
                     label="Login"
-                    type="button"
                     block="true"
                     type="danger"
                     onClick={signIn}
@@ -97,7 +95,6 @@ const Login = () => {
                 <div className="col-lg">
                   <Button
                     label="Register"
-                    type="button"
                     block="true"
                     type="primary"
                     className="login__button"
@@ -107,7 +104,6 @@ const Login = () => {
               <div className="row">
                 <Button
                   label="Forgot password?"
-                  type="button"
                   block="true"
                   type="transparent"
                   className="login__button"
