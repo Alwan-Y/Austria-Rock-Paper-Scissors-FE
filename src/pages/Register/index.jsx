@@ -12,9 +12,15 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [error, setError] = useState(false);
 
   const signUp = async () => {
     try {
+      if (password !== confirmPassword) {
+        setError(true);
+
+        return alert("Password and Confirm password not match !!");
+      }
       const sign = await fire
         .auth()
         .createUserWithEmailAndPassword(email, password);
@@ -23,6 +29,7 @@ const Register = () => {
         history.push(ROUTES.LOGIN);
       }
     } catch (e) {
+      setError(true);
       alert("Upss something error");
     }
   };
@@ -41,10 +48,13 @@ const Register = () => {
                 type="email"
                 id="email"
                 placeholder="Enter email"
-                className="form-control register__form"
+                className={`form-control  ${
+                  error ? "is-invalid" : ""
+                } register__form`}
                 classNameLabel="register__label"
                 value={email}
                 onChange={(e) => {
+                  setError(false);
                   setEmail(e.target.value);
                 }}
               />
@@ -53,9 +63,12 @@ const Register = () => {
                 type="password"
                 id="password"
                 placeholder="Enter Password"
-                className="form-control register__form register__margin"
+                className={`form-control ${
+                  error ? "is-invalid" : ""
+                } register__form register__margin`}
                 value={password}
                 onChange={(e) => {
+                  setError(false);
                   setPassword(e.target.value);
                 }}
               />
@@ -64,9 +77,12 @@ const Register = () => {
                 type="password"
                 id="confirm-password"
                 placeholder="Enter Confirm Password"
-                className="form-control register__form register__margin"
+                className={`form-control ${
+                  error ? "is-invalid" : ""
+                } register__form register__margin`}
                 value={confirmPassword}
                 onChange={(e) => {
+                  setError(false);
                   setConfirmPassword(e.target.value);
                 }}
               />

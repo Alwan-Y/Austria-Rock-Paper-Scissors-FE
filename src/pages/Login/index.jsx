@@ -10,6 +10,7 @@ const Login = () => {
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState(false);
 
   const signIn = async () => {
     try {
@@ -20,6 +21,7 @@ const Login = () => {
         checkUser();
       }
     } catch (e) {
+      setError(true);
       alert("Upss something error");
     }
   };
@@ -53,10 +55,13 @@ const Login = () => {
                 type="email"
                 id="email"
                 placeholder="Enter email"
-                className="form-control login__form"
+                className={`form-control ${
+                  error ? "is-invalid" : ""
+                } login__form`}
                 classNameLabel="login__label logim__margin__1"
                 value={email}
                 onChange={(e) => {
+                  setError(false);
                   setEmail(e.target.value);
                 }}
               />
@@ -65,10 +70,13 @@ const Login = () => {
                 type="password"
                 id="password"
                 placeholder="Enter Password"
-                className="form-control login__form login__margin__2"
+                className={`form-control ${
+                  error ? "is-invalid" : ""
+                } login__form login__margin__2`}
                 classNameLabel="login__label"
                 value={password}
                 onChange={(e) => {
+                  setError(false);
                   setPassword(e.target.value);
                 }}
               />
