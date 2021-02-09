@@ -63,6 +63,21 @@ class api {
       return error;
     }
   };
+
+  static getStatusAndUsername = async (email) => {
+    try {
+      const statusAndUsername = await axios.post(
+        `http://localhost:3001/apis/get-status`,
+        {
+          email,
+        }
+      );
+
+      return statusAndUsername;
+    } catch (error) {
+      return error;
+    }
+  };
 }
 
 export default api;
