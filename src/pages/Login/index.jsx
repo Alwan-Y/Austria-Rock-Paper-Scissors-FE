@@ -5,6 +5,7 @@ import Button from "../../components/common/Button";
 import Form from "../../components/common/Form";
 import NavigationBar from "../../components/common/NavigationBar";
 import Footer from "../../components/common/Footer";
+import api from "../../services";
 
 const Login = () => {
   const history = useHistory();
@@ -19,6 +20,11 @@ const Login = () => {
         .signInWithEmailAndPassword(email, password);
       if (user) {
         checkUser();
+
+        const statusAndUsername = await api.getStatusAndUsername(email);
+
+        localStorage.setItem("email", statusAndUsername.data.status.email);
+        localStorage.setItem("username", statusAndUsername.data.username);
       }
     } catch (e) {
       setError(true);
