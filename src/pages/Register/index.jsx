@@ -6,12 +6,14 @@ import Form from "../../components/common/Form";
 import NavigationBar from "../../components/common/NavigationBar";
 import Footer from "../../components/common/Footer";
 import ROUTES from "../../configs/Firebase";
+import api from "../../services";
 
 const Register = () => {
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [username, setUsername] = useState("");
   const [error, setError] = useState(false);
 
   const signUp = async () => {
@@ -21,13 +23,16 @@ const Register = () => {
 
         return alert("Password and Confirm password not match !!");
       }
-      const sign = await fire
-        .auth()
-        .createUserWithEmailAndPassword(email, password);
-      if (sign) {
-        alert("Succes register your account");
-        history.push(ROUTES.LOGIN);
-      }
+
+      const register = await api.createUser(email, username, password);
+
+      console.log(register);
+      // const sign = await fire
+      //   .auth()
+      //   .createUserWithEmailAndPassword(email, password);
+      // if (sign) {
+      //   alert("Succes register your account");
+      //   history.push(ROUTES.LOGIN);
     } catch (e) {
       setError(true);
       alert("Upss something error");
@@ -56,6 +61,20 @@ const Register = () => {
                 onChange={(e) => {
                   setError(false);
                   setEmail(e.target.value);
+                }}
+              />
+              <Form
+                htmlFor="username"
+                type="text"
+                id="username"
+                placeholder="Enter Username"
+                className={`form-control ${
+                  error ? "is-invalid" : ""
+                } register__form register__margin`}
+                value={username}
+                onChange={(e) => {
+                  setError(false);
+                  setUsername(e.target.value);
                 }}
               />
               <Form
