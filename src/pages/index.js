@@ -1,10 +1,11 @@
 import Home from "./Home";
-import Feedback from './Feedback';
+import Feedback from "./Feedback";
 import Register from "./Register";
 import RegisterBio from "./RegisterBio";
 import Login from "./Login";
 import JoinRoom from "./JoinRoom";
 import Game from "./Game";
+import Dashboard from "./Dashboard";
 import PageNotFound from "./PageNotFound";
 
 const Pages = {
@@ -15,6 +16,7 @@ const Pages = {
   Login,
   JoinRoom,
   Game,
+  Dashboard,
   PageNotFound,
 };
 
