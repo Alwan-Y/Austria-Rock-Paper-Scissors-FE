@@ -1,9 +1,23 @@
-import React from "react";
+import api from "services";
+import { useParams } from "react-router-dom";
 
-const Choice = ({ choice }) => {
+const Choice = ({ choice, player }) => {
+  const { id } = useParams();
+
+  const handleClick = async () => {
+    try {
+      await api.patchChoice(id, player, choice);
+    } catch (error) {
+      return error;
+    }
+  };
+
   return (
-    <div className="col-md c">
-      <div className={`btn choice__btn choice__${choice}`}></div>
+    <div className="col-md-12">
+      <div
+        className={`btn choice__btn choice__${choice}`}
+        onClick={handleClick}
+      ></div>
     </div>
   );
 };
