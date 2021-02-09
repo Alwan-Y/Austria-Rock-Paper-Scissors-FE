@@ -30,6 +30,16 @@ const Register = () => {
         alert("Succes register your account");
         history.push(ROUTES.LOGIN);
       }
+
+      const register = await api.createUser(email, username, password);
+
+      console.log(register);
+      // const sign = await fire
+      //   .auth()
+      //   .createUserWithEmailAndPassword(email, password);
+      // if (sign) {
+      //   alert("Succes register your account");
+      //   history.push(ROUTES.LOGIN);
     } catch (e) {
       setError(true);
       alert("Upss something error");
