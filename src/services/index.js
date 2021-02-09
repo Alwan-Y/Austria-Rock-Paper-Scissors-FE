@@ -43,6 +43,15 @@ class api {
         username,
         choice,
       });
+      return await res;
+    } catch (error) {
+      return error;
+    }
+  };
+
+  static getHistory = async () => {
+    try {
+      const res = await axios.get(`${baseUrl}/history`);
 
       return await res;
     } catch (error) {

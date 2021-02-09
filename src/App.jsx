@@ -35,6 +35,9 @@ function App() {
         <Route path={ROUTES.GAME}>
           <Pages.Game />
         </Route>
+        <Route path={ROUTES.DASHBOARD}>
+          <Pages.Dashboard />
+        </Route>
         <Route path={ROUTES.PAGENOTFOUND} exact>
           <Pages.PageNotFound />
         </Route>

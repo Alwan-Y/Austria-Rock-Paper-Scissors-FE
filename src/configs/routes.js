@@ -9,6 +9,7 @@ const ROUTES = {
 
   JOINROOM: "/joinroom",
   GAME: "/game/:id",
+  DASHBOARD: "/dashboard",
 
   PAGENOTFOUND: "/404",
 };
