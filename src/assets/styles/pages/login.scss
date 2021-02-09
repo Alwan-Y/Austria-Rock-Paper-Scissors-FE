@@ -1,0 +1,48 @@
+.login {
+  @include background("../images/index/index7.jpg",
+    bottom,
+    $black,
+    0%,
+    $transparent,
+    20%,
+    $transparent,
+    70%,
+    $black,
+    100%);
+
+  &__position {
+    margin-top: 17vh;
+
+    @include media-breakpoint-up(sm) {
+      margin-top: 27vh;
+    }
+  }
+
+  &__label {
+    @include label($secondary, 20pt, bold);
+  }
+
+  &__form {
+    background-color: $secondary;
+  }
+
+  &__button__2 {
+    @include button-custom($primary, 12pt, bold);
+  }
+
+  &__button {
+    @include button-custom($secondary, 12pt, bold);
+  }
+
+  &__button {
+    @include button-custon($primary, 12pt, bold);
+  }
+
+  &__button {
+    @include button-custom($secondary, 12pt, bold);
+  }
+
+  &__margin__2 {
+    margin-top: -20px;
+  }
+}

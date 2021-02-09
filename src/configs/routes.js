@@ -5,6 +5,7 @@ const ROUTES = {
 
   REGISTER: "/register",
   REGISTERBIO: "/register-bio",
+  UPDATEBIO: "/update-bio",
   LOGIN: "/auth/login",
 
   JOINROOM: "/joinroom",
@@ -12,6 +13,7 @@ const ROUTES = {
   DASHBOARD: "/dashboard",
 
   PAGENOTFOUND: "/404",
+  FORGOTPASSWORD: "/forgot-password",
 };
 
 export default ROUTES;

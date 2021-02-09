@@ -58,6 +58,35 @@ class api {
       return error;
     }
   };
+
+  static createUser = async (email, username, password) => {
+    try {
+      const register = await axios.post(`http://localhost:3001/apis/user`, {
+        email,
+        username,
+        password,
+      });
+
+      return register;
+    } catch (error) {
+      return error;
+    }
+  };
+
+  static getStatusAndUsername = async (email) => {
+    try {
+      const statusAndUsername = await axios.post(
+        `http://localhost:3001/apis/get-status`,
+        {
+          email,
+        }
+      );
+
+      return statusAndUsername;
+    } catch (error) {
+      return error;
+    }
+  };
 }
 
 export default api;

@@ -1,0 +1,28 @@
+.bio {
+  @include background("../images/index/index9.jpg",
+    bottom,
+    $black,
+    0%,
+    $transparent,
+    20%,
+    $transparent,
+    70%,
+    $black,
+    100%);
+
+  &__position {
+    margin-top: 35vh;
+  }
+
+  &__label {
+    @include label($secondary, 20pt, bold);
+  }
+
+  &__form {
+    background-color: $secondary;
+  }
+
+  &__button {
+    @include button-custom($secondary, 14pt, bold);
+  }
+}

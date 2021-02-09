@@ -1,12 +1,13 @@
 import Home from "./Home";
 import Feedback from "./Feedback";
 import Register from "./Register";
-import RegisterBio from "./RegisterBio";
+import RegisterBio from "./RegisterBioAndUpdateBio";
 import Login from "./Login";
 import JoinRoom from "./JoinRoom";
 import Game from "./Game";
 import Dashboard from "./Dashboard";
 import PageNotFound from "./PageNotFound";
+import ForgotPassword from "./ForgotPassword";
 
 const Pages = {
   Home,
@@ -18,6 +19,7 @@ const Pages = {
   Game,
   Dashboard,
   PageNotFound,
+  ForgotPassword,
 };
 
 export default Pages;
