@@ -59,9 +59,21 @@ class api {
     }
   };
 
+  static createNewGameRound = async (roomId, username) => {
+    try {
+      const res = await axios.post(`${baseUrl}/games/${roomId}`, {
+        username,
+      });
+
+      return await res;
+    } catch (error) {
+      return error;
+    }
+  };
+
   static createUser = async (email, username, password) => {
     try {
-      const register = await axios.post(`http://localhost:3001/apis/user`, {
+      const register = await axios.post(`${baseUrl}/user`, {
         email,
         username,
         password,
@@ -75,12 +87,9 @@ class api {
 
   static username = async (email) => {
     try {
-      const statusAndUsername = await axios.post(
-        `http://localhost:3001/apis/get-status`,
-        {
-          email,
-        }
-      );
+      const statusAndUsername = await axios.post(`${baseUrl}/get-status`, {
+        email,
+      });
 
       return statusAndUsername;
     } catch (error) {

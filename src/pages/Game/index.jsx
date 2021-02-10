@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { io } from "socket.io-client";
 
-import Choices from "components/common/Choices";
 import api from "services";
+
+import Button from "components/common/Button";
+import Choices from "components/common/Choices";
 
 const Game = () => {
   const [gameRoom, setGameRoom] = useState("");
@@ -16,9 +18,7 @@ const Game = () => {
       console.log(msg);
     });
 
-    socket.on("connect", (msg) => {
-      socket.emit("room", id);
-    });
+    socket.emit("room", id);
   }, [id]);
 
   useEffect(() => {
@@ -35,6 +35,15 @@ const Game = () => {
     fetch();
   });
 
+  const onRestart = async () => {
+    try {
+      const res = await api.createNewGameRound(id, gameRoom.playerOneUsername);
+      setGameRoom(res.data.room);
+    } catch (error) {
+      return error;
+    }
+  };
+
   return (
     <div className="room container">
       <h2>Game id : {id}</h2>
@@ -46,7 +55,10 @@ const Game = () => {
       </div>
       {gameRoom ? (
         gameRoom.Histories[0].result ? (
-          <h1>{gameRoom.Histories[0].result}</h1>
+          <div className="container">
+            <h1>{gameRoom.Histories[0].result}</h1>
+            <Button label="restart" onClick={onRestart} />
+          </div>
         ) : (
           <div className="row room__choice-row">
             {gameRoom.Histories[0].playerOneChoice ? (
