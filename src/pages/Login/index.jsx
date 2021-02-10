@@ -21,10 +21,11 @@ const Login = () => {
       if (user) {
         checkUser();
 
-        const statusAndUsername = await api.getStatusAndUsername(email);
+        const status = await fire.auth().currentUser.getIdTokenResult();
+        const username = await api.username(email);
 
-        localStorage.setItem("email", statusAndUsername.data.status.email);
-        localStorage.setItem("username", statusAndUsername.data.username);
+        localStorage.setItem("isAdmin", status.claims.admin);
+        localStorage.setItem("username", username.data.username);
       }
     } catch (e) {
       setError(true);
@@ -41,8 +42,6 @@ const Login = () => {
       return alert("Verify your email first !!");
     }
 
-    const { refreshToken } = user;
-    localStorage.setItem("token", refreshToken);
     alert("Succes Login");
     // history.push("")
   };
@@ -61,8 +60,9 @@ const Login = () => {
                 type="email"
                 id="email"
                 placeholder="Enter email"
-                className={`form-control ${error ? "is-invalid" : ""
-                  } login__form`}
+                className={`form-control ${
+                  error ? "is-invalid" : ""
+                } login__form`}
                 classNameLabel="login__label logim__margin__1"
                 value={email}
                 onChange={(e) => {
@@ -75,8 +75,9 @@ const Login = () => {
                 type="password"
                 id="password"
                 placeholder="Enter Password"
-                className={`form-control ${error ? "is-invalid" : ""
-                  } login__form login__margin__2`}
+                className={`form-control ${
+                  error ? "is-invalid" : ""
+                } login__form login__margin__2`}
                 classNameLabel="login__label"
                 value={password}
                 onChange={(e) => {

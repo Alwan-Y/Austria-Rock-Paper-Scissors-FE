@@ -73,7 +73,7 @@ class api {
     }
   };
 
-  static getStatusAndUsername = async (email) => {
+  static username = async (email) => {
     try {
       const statusAndUsername = await axios.post(
         `http://localhost:3001/apis/get-status`,
